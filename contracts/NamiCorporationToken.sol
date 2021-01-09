@@ -61,7 +61,7 @@ contract NamiCorporationToken is Context, AccessControl, ERC20Burnable, ERC20Pau
     /**
      * @dev Unpauses all token transfers.
      *
-     * See {ERC20Pausable} and {Pau«sable-_unpause}.
+     * See {ERC20Pausable} and {Pausable-_unpause}.
      *
      * Requirements:
      *

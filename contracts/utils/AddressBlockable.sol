@@ -8,27 +8,7 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 /**
- * @dev Contract module that allows children to implement role-based access
- * control mechanisms.
- *
- * Roles are referred to by their `bytes32` identifier. These should be exposed
- * in the external API and be unique. The best way to achieve this is by
- * using `public constant` hash digests:
- *
- * ```
- * bytes32 public constant MY_ROLE = keccak256("MY_ROLE");
- * ```
- *
- * Roles can be used to represent a set of permissions. To restrict access to a
- * function call, use {hasRole}:
- *
- * ```
- * function foo() public {
- *     require(hasRole(MY_ROLE, msg.sender));
- *     ...
- * }
- * ```
- *
+ * @dev Contract module that allows blocking addresses from transferring
  */
 abstract contract AddressBlockable is ERC20, AccessControl {
     using EnumerableSet for EnumerableSet.AddressSet;
@@ -38,6 +18,7 @@ abstract contract AddressBlockable is ERC20, AccessControl {
     EnumerableSet.AddressSet private _blacklistedAddresses;
     bytes32 public constant BLACKLIST_MANAGER_ROLE = keccak256("BLACKLIST_MANAGER_ROLE");
 
+    // Events
     event BlacklistAdded(address account, address indexed sender);
     event BlacklistRemoved(address account, address indexed sender);
 
