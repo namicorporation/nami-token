@@ -27,7 +27,7 @@ contract NamiCorporationToken is Context, AccessControl, ERC20Burnable, ERC20Pau
         _setupRole(PAUSER_ROLE, _msgSender());
 
         // Init supply
-        mint(_msgSender(), 86*10**6 * 10**uint(_decimals));
+        mint(_msgSender(), 50125360 * 10**uint(decimals()));
     }
 
     /**
