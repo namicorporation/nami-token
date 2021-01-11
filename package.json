@@ -6,9 +6,9 @@
   "scripts": {
     "preinstall": "node scripts/preinstall-script.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify": "npx truffle run verify",
-    "migrate": "npx truffle migrate",
-    "deploy": "npm run migrate"
+    "verify_rinkeby": "npx truffle run verify NamiCorporationTokenUpgradable --network rinkeby",
+    "migrate_rinkeby": "npx truffle migrate --network rinkeby",
+    "deploy_rinkeby": "npm run migrate_rinkeby"
   },
   "author": "",
   "license": "ISC",
