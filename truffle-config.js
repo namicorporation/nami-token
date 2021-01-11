@@ -100,5 +100,12 @@ module.exports = {
       //  evmVersion: "byzantium"
       // }
     }
-  }
+  },
+
+  plugins: [
+    'truffle-plugin-verify',
+  ],
+  api_keys: {
+    etherscan: process.env.ETHERSCAN_API_KEY,
+  },
 };
