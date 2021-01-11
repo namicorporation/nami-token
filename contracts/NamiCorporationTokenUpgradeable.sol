@@ -2,14 +2,16 @@
 
 pragma solidity >=0.6.0 <0.8.0;
 
-import "@openzeppelin/contracts/access/AccessControl.sol";
-import "@openzeppelin/contracts/GSN/Context.sol";
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol";
-import "@openzeppelin/contracts/token/ERC20/ERC20Pausable.sol";
-import "./utils/AddressBlockable.sol";
+import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/GSN/ContextUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20BurnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20PausableUpgradeable.sol";
+import "./utils/AddressBlockableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol";
 
-contract NamiCorporationToken is Context, AccessControl, ERC20Burnable, ERC20Pausable, AddressBlockable {
+
+contract NamiCorporationTokenUpgradeable is Initializable, ContextUpgradeable, AccessControlUpgradeable, ERC20BurnableUpgradeable, ERC20PausableUpgradeable, AddressBlockableUpgradeable {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
 
@@ -19,10 +21,16 @@ contract NamiCorporationToken is Context, AccessControl, ERC20Burnable, ERC20Pau
      *
      * See {ERC20-constructor}.
      */
-    constructor(string memory name, string memory symbol) ERC20(name, symbol) {
+    function initialize(string memory name, string memory symbol) initializer public virtual {
+        __Context_init_unchained();
+        __AccessControl_init_unchained();
+        __ERC20_init_unchained(name, symbol);
+        __ERC20Burnable_init_unchained();
+        __ERC20Pausable_init_unchained();
+        __AddressBlockable_init_unchained();
+
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
         _setupRole(BLACKLIST_MANAGER_ROLE, _msgSender());
-
         _setupRole(MINTER_ROLE, _msgSender());
         _setupRole(PAUSER_ROLE, _msgSender());
 
@@ -72,7 +80,9 @@ contract NamiCorporationToken is Context, AccessControl, ERC20Burnable, ERC20Pau
         _unpause();
     }
 
-    function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override(ERC20, ERC20Pausable, AddressBlockable) {
+    function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override(ERC20Upgradeable, ERC20PausableUpgradeable, AddressBlockableUpgradeable) {
         super._beforeTokenTransfer(from, to, amount);
     }
+
+    uint256[50] private __gap;
 }

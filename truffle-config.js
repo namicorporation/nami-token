@@ -65,6 +65,15 @@ module.exports = {
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
+    rinkeby: {
+      provider: () => new HDWalletProvider(
+          process.env.MNEMONIC_PHRASE_TEST,
+          process.env.RINKEBY_JSON_RPC,
+      ),
+      network_id: 4,
+      gasPrice: 10e9,
+      skipDryRun: true
+    },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),

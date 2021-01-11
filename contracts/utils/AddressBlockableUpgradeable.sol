@@ -2,25 +2,34 @@
 
 pragma solidity ^0.7.0;
 
-import "@openzeppelin/contracts/utils/EnumerableSet.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/access/AccessControl.sol";
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 
 /**
  * @dev Contract module that allows blocking addresses from transferring
  */
-abstract contract AddressBlockable is ERC20, AccessControl {
-    using EnumerableSet for EnumerableSet.AddressSet;
-    using Address for address;
+abstract contract AddressBlockableUpgradeable is Initializable, ERC20Upgradeable, AccessControlUpgradeable {
+    using EnumerableSetUpgradeable for EnumerableSetUpgradeable.AddressSet;
+    using AddressUpgradeable for address;
 
     // Members
-    EnumerableSet.AddressSet private _blacklistedAddresses;
+    EnumerableSetUpgradeable.AddressSet private _blacklistedAddresses;
     bytes32 public constant BLACKLIST_MANAGER_ROLE = keccak256("BLACKLIST_MANAGER_ROLE");
 
     // Events
     event BlacklistAdded(address account, address indexed sender);
     event BlacklistRemoved(address account, address indexed sender);
+
+
+    function __AddressBlockable_init() internal initializer {
+        __AccessControl_init_unchained();
+        __AddressBlockable_init_unchained();
+    }
+
+    function __AddressBlockable_init_unchained() internal initializer {
+    }
 
     /**
      * @dev Add an address to blacklist
@@ -83,4 +92,6 @@ abstract contract AddressBlockable is ERC20, AccessControl {
         super._beforeTokenTransfer(from, to, amount);
         require(!isBlacklisted(from) && !isBlacklisted(to), "AddressBlockable: invalid sender or recipient");
     }
+
+    uint256[50] private __gap;
 }

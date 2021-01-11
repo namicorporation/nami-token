@@ -1,5 +1,10 @@
-const NamiCorporationToken = artifacts.require("NamiCorporationToken");
+const { deployProxy } = require('@openzeppelin/truffle-upgrades');
+const NamiCorporationTokenUpgradeable = artifacts.require("NamiCorporationTokenUpgradeable");
 
-module.exports = function (deployer) {
-  deployer.deploy(NamiCorporationToken, 'Nami Corporation Token', 'NAMI');
+module.exports = async function (deployer) {
+  const instance = await deployProxy(NamiCorporationTokenUpgradeable, ['Nami Corporation Token', 'NAMI'], {
+    deployer,
+    unsafeAllowCustomTypes: true,
+  });
+  console.log("NamiCorporationToken deployed to:", instance.address);
 };
