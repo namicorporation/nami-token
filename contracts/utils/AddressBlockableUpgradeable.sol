@@ -14,7 +14,6 @@ abstract contract AddressBlockableUpgradeable is Initializable, ERC20Upgradeable
     using EnumerableSetUpgradeable for EnumerableSetUpgradeable.AddressSet;
     using AddressUpgradeable for address;
 
-    // Members
     EnumerableSetUpgradeable.AddressSet private _blacklistedAddresses;
     bytes32 public constant BLACKLIST_MANAGER_ROLE = keccak256("BLACKLIST_MANAGER_ROLE");
 
@@ -70,7 +69,7 @@ abstract contract AddressBlockableUpgradeable is Initializable, ERC20Upgradeable
     /**
      * @dev Returns the number of accounts those are in blacklist
      */
-    function getBlacklistedMemberCount() public view returns (uint256) {
+    function getBlacklistedAddressesCount() public view returns (uint256) {
         require(hasRole(BLACKLIST_MANAGER_ROLE, _msgSender()), "AddressBlockable: must have blacklist manager role to view");
 
         return _blacklistedAddresses.length();
@@ -79,10 +78,24 @@ abstract contract AddressBlockableUpgradeable is Initializable, ERC20Upgradeable
     /**
      * @dev Returns the number of accounts those are in blacklist
      */
-    function getBlacklistedMemberAt(uint256 index) public view returns (address) {
+    function getBlacklistedAddressAt(uint256 index) public view returns (address) {
+        require(hasRole(BLACKLIST_MANAGER_ROLE, _msgSender()), "AddressBlockable: must have blacklist manager role to view");
+        require(index < getBlacklistedAddressCount(), "AddressBlockable: index exceeds length");
+        return _blacklistedAddresses.at(index);
+    }
+
+    /**
+     * @dev Returns all Addresses inside blacklist
+     */
+    function getBlacklistedAddresses() public view returns (address[] memory) {
         require(hasRole(BLACKLIST_MANAGER_ROLE, _msgSender()), "AddressBlockable: must have blacklist manager role to view");
 
-        return _blacklistedAddresses.at(index);
+        address[] allAddresses;
+        uint256 count = getBlacklistedAddressesCount();
+        for (uint256 i = 0; i < count; ++i) {
+            allAddresses.push(_blacklistedAddresses.at(i));
+        }
+        return allAddresses;
     }
 
     /**
