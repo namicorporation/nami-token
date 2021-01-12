@@ -1,9 +1,15 @@
-const { upgradeProxy } = require('@openzeppelin/truffle-upgrades');
-
-
-const NamiCorporationTokenUpgradeable = artifacts.require("NamiCorporationTokenUpgradeable");
-
-module.exports = async function (deployer) {
-  return;
-  await upgradeProxy('0x510ebF28D1AcB5db573d38D51CEA8B9Eb8da55EC', NamiCorporationTokenUpgradeable, { deployer });
-};
+// const { upgradeProxy } = require('@openzeppelin/truffle-upgrades');
+//
+//
+// const NamiCorporationTokenUpgradeable = artifacts.require("NamiCorporationTokenUpgradeable");
+// const NamiCorporationTokenUpgradeableV2 = artifacts.require("NamiCorporationTokenUpgradeableV2");
+//
+// module.exports = async function (deployer) {
+//   const existing = await NamiCorporationTokenUpgradeable.deployed();
+//   console.log('> Existing contract deployed at ' + existing.address);
+//   const instance = await upgradeProxy(existing.address, NamiCorporationTokenUpgradeableV2, {
+//     deployer,
+//     unsafeAllowCustomTypes: true,
+//   });
+//   console.log('> New contract deployed at ' + instance.address);
+// };

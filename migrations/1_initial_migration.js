@@ -6,5 +6,5 @@ module.exports = async function (deployer) {
     deployer,
     unsafeAllowCustomTypes: true,
   });
-  console.log("NamiCorporationToken deployed to:", instance.address);
+  console.log(">> NamiCorporationToken deployed to:", instance.address);
 };

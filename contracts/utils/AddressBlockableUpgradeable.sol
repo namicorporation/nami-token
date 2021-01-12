@@ -91,6 +91,5 @@ abstract contract AddressBlockableUpgradeable is Initializable, ERC20Upgradeable
         super._beforeTokenTransfer(from, to, amount);
         require(!isBlacklisted(from) && !isBlacklisted(to), "AddressBlockable: invalid sender or recipient");
     }
-
     uint256[50] private __gap;
 }
