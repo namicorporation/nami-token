@@ -642,39 +642,39 @@
     "absolutePath": "/Users/hieptran/Documents/Projects/nami/NAMI-smart-contract-v2/contracts/utils/AddressBlockableUpgradeable.sol",
     "exportedSymbols": {
       "AccessControlUpgradeable": [
-        768
+        762
       ],
       "AddressBlockableUpgradeable": [
-        415
+        409
       ],
       "AddressUpgradeable": [
-        2036
+        2030
       ],
       "ContextUpgradeable": [
-        460
+        454
       ],
       "ERC20Upgradeable": [
-        1714
+        1708
       ],
       "EnumerableSetUpgradeable": [
-        2516
+        2510
       ],
       "IERC20Upgradeable": [
-        1792
+        1786
       ],
       "Initializable": [
-        1035
+        1029
       ],
       "SafeMathUpgradeable": [
-        964
+        958
       ]
     },
-    "id": 416,
+    "id": 410,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 203,
+        "id": 197,
         "literals": [
           "solidity",
           "^",
@@ -687,10 +687,10 @@
       {
         "absolutePath": "@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol",
         "file": "@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol",
-        "id": 204,
+        "id": 198,
         "nodeType": "ImportDirective",
-        "scope": 416,
-        "sourceUnit": 2517,
+        "scope": 410,
+        "sourceUnit": 2511,
         "src": "58:80:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -698,10 +698,10 @@
       {
         "absolutePath": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
         "file": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
-        "id": 205,
+        "id": 199,
         "nodeType": "ImportDirective",
-        "scope": 416,
-        "sourceUnit": 2037,
+        "scope": 410,
+        "sourceUnit": 2031,
         "src": "139:74:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -709,10 +709,10 @@
       {
         "absolutePath": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
         "file": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
-        "id": 206,
+        "id": 200,
         "nodeType": "ImportDirective",
-        "scope": 416,
-        "sourceUnit": 769,
+        "scope": 410,
+        "sourceUnit": 763,
         "src": "214:81:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -720,10 +720,10 @@
       {
         "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
         "file": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
-        "id": 207,
+        "id": 201,
         "nodeType": "ImportDirective",
-        "scope": 416,
-        "sourceUnit": 1715,
+        "scope": 410,
+        "sourceUnit": 1709,
         "src": "296:78:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -733,124 +733,124 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 209,
+              "id": 203,
               "name": "Initializable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1035,
+              "referencedDeclaration": 1029,
               "src": "506:13:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Initializable_$1035",
+                "typeIdentifier": "t_contract$_Initializable_$1029",
                 "typeString": "contract Initializable"
               }
             },
-            "id": 210,
+            "id": 204,
             "nodeType": "InheritanceSpecifier",
             "src": "506:13:1"
           },
           {
             "baseName": {
-              "id": 211,
+              "id": 205,
               "name": "ERC20Upgradeable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1714,
+              "referencedDeclaration": 1708,
               "src": "521:16:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20Upgradeable_$1714",
+                "typeIdentifier": "t_contract$_ERC20Upgradeable_$1708",
                 "typeString": "contract ERC20Upgradeable"
               }
             },
-            "id": 212,
+            "id": 206,
             "nodeType": "InheritanceSpecifier",
             "src": "521:16:1"
           },
           {
             "baseName": {
-              "id": 213,
+              "id": 207,
               "name": "AccessControlUpgradeable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 768,
+              "referencedDeclaration": 762,
               "src": "539:24:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AccessControlUpgradeable_$768",
+                "typeIdentifier": "t_contract$_AccessControlUpgradeable_$762",
                 "typeString": "contract AccessControlUpgradeable"
               }
             },
-            "id": 214,
+            "id": 208,
             "nodeType": "InheritanceSpecifier",
             "src": "539:24:1"
           }
         ],
         "contractDependencies": [
-          460,
-          768,
-          1035,
-          1714,
-          1792
+          454,
+          762,
+          1029,
+          1708,
+          1786
         ],
         "contractKind": "contract",
         "documentation": {
-          "id": 208,
+          "id": 202,
           "nodeType": "StructuredDocumentation",
           "src": "376:80:1",
           "text": " @dev Contract module that allows blocking addresses from transferring"
         },
         "fullyImplemented": true,
-        "id": 415,
+        "id": 409,
         "linearizedBaseContracts": [
-          415,
-          768,
-          1714,
-          1792,
-          460,
-          1035
+          409,
+          762,
+          1708,
+          1786,
+          454,
+          1029
         ],
         "name": "AddressBlockableUpgradeable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 217,
+            "id": 211,
             "libraryName": {
-              "id": 215,
+              "id": 209,
               "name": "EnumerableSetUpgradeable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2516,
+              "referencedDeclaration": 2510,
               "src": "576:24:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_EnumerableSetUpgradeable_$2516",
+                "typeIdentifier": "t_contract$_EnumerableSetUpgradeable_$2510",
                 "typeString": "library EnumerableSetUpgradeable"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "570:71:1",
             "typeName": {
-              "id": 216,
+              "id": 210,
               "name": "EnumerableSetUpgradeable.AddressSet",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2312,
+              "referencedDeclaration": 2306,
               "src": "605:35:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_AddressSet_$2312_storage_ptr",
+                "typeIdentifier": "t_struct$_AddressSet_$2306_storage_ptr",
                 "typeString": "struct EnumerableSetUpgradeable.AddressSet"
               }
             }
           },
           {
-            "id": 220,
+            "id": 214,
             "libraryName": {
-              "id": 218,
+              "id": 212,
               "name": "AddressUpgradeable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2036,
+              "referencedDeclaration": 2030,
               "src": "652:18:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AddressUpgradeable_$2036",
+                "typeIdentifier": "t_contract$_AddressUpgradeable_$2030",
                 "typeString": "library AddressUpgradeable"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "646:37:1",
             "typeName": {
-              "id": 219,
+              "id": 213,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "675:7:1",
@@ -863,26 +863,26 @@
           },
           {
             "constant": false,
-            "id": 222,
+            "id": 216,
             "mutability": "mutable",
             "name": "_blacklistedAddresses",
             "nodeType": "VariableDeclaration",
-            "scope": 415,
+            "scope": 409,
             "src": "689:65:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_AddressSet_$2312_storage",
+              "typeIdentifier": "t_struct$_AddressSet_$2306_storage",
               "typeString": "struct EnumerableSetUpgradeable.AddressSet"
             },
             "typeName": {
-              "id": 221,
+              "id": 215,
               "name": "EnumerableSetUpgradeable.AddressSet",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2312,
+              "referencedDeclaration": 2306,
               "src": "689:35:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_AddressSet_$2312_storage_ptr",
+                "typeIdentifier": "t_struct$_AddressSet_$2306_storage_ptr",
                 "typeString": "struct EnumerableSetUpgradeable.AddressSet"
               }
             },
@@ -891,11 +891,11 @@
           {
             "constant": true,
             "functionSelector": "410b2424",
-            "id": 227,
+            "id": 221,
             "mutability": "constant",
             "name": "BLACKLIST_MANAGER_ROLE",
             "nodeType": "VariableDeclaration",
-            "scope": 415,
+            "scope": 409,
             "src": "760:84:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -904,7 +904,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 223,
+              "id": 217,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "760:7:1",
@@ -917,7 +917,7 @@
               "arguments": [
                 {
                   "hexValue": "424c41434b4c4953545f4d414e414745525f524f4c45",
-                  "id": 225,
+                  "id": 219,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -939,7 +939,7 @@
                     "typeString": "literal_string \"BLACKLIST_MANAGER_ROLE\""
                   }
                 ],
-                "id": 224,
+                "id": 218,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -950,7 +950,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 226,
+              "id": 220,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -969,21 +969,21 @@
           },
           {
             "anonymous": false,
-            "id": 233,
+            "id": 227,
             "name": "BlacklistAdded",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 232,
+              "id": 226,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 229,
+                  "id": 223,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 233,
+                  "scope": 227,
                   "src": "886:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -992,7 +992,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 228,
+                    "id": 222,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "886:7:1",
@@ -1006,12 +1006,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 231,
+                  "id": 225,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 233,
+                  "scope": 227,
                   "src": "903:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1020,7 +1020,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 230,
+                    "id": 224,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "903:7:1",
@@ -1039,21 +1039,21 @@
           },
           {
             "anonymous": false,
-            "id": 239,
+            "id": 233,
             "name": "BlacklistRemoved",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 238,
+              "id": 232,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 235,
+                  "id": 229,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 239,
+                  "scope": 233,
                   "src": "955:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1062,7 +1062,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 234,
+                    "id": 228,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "955:7:1",
@@ -1076,12 +1076,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 237,
+                  "id": 231,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 239,
+                  "scope": 233,
                   "src": "972:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1090,7 +1090,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 236,
+                    "id": 230,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "972:7:1",
@@ -1109,7 +1109,7 @@
           },
           {
             "body": {
-              "id": 250,
+              "id": 244,
               "nodeType": "Block",
               "src": "1059:94:1",
               "statements": [
@@ -1118,18 +1118,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 244,
+                      "id": 238,
                       "name": "__AccessControl_init_unchained",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 489,
+                      "referencedDeclaration": 483,
                       "src": "1069:30:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 245,
+                    "id": 239,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1144,7 +1144,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 246,
+                  "id": 240,
                   "nodeType": "ExpressionStatement",
                   "src": "1069:32:1"
                 },
@@ -1153,18 +1153,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 247,
+                      "id": 241,
                       "name": "__AddressBlockable_init_unchained",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 257,
+                      "referencedDeclaration": 251,
                       "src": "1111:33:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 248,
+                    "id": 242,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1179,24 +1179,24 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 249,
+                  "id": 243,
                   "nodeType": "ExpressionStatement",
                   "src": "1111:35:1"
                 }
               ]
             },
-            "id": 251,
+            "id": 245,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 242,
+                "id": 236,
                 "modifierName": {
-                  "id": 241,
+                  "id": 235,
                   "name": "initializer",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1012,
+                  "referencedDeclaration": 1006,
                   "src": "1047:11:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1210,18 +1210,18 @@
             "name": "__AddressBlockable_init",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 240,
+              "id": 234,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1035:2:1"
             },
             "returnParameters": {
-              "id": 243,
+              "id": 237,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1059:0:1"
             },
-            "scope": 415,
+            "scope": 409,
             "src": "1003:150:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1229,23 +1229,23 @@
           },
           {
             "body": {
-              "id": 256,
+              "id": 250,
               "nodeType": "Block",
               "src": "1225:7:1",
               "statements": []
             },
-            "id": 257,
+            "id": 251,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 254,
+                "id": 248,
                 "modifierName": {
-                  "id": 253,
+                  "id": 247,
                   "name": "initializer",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1012,
+                  "referencedDeclaration": 1006,
                   "src": "1213:11:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1259,18 +1259,18 @@
             "name": "__AddressBlockable_init_unchained",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 252,
+              "id": 246,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1201:2:1"
             },
             "returnParameters": {
-              "id": 255,
+              "id": 249,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1225:0:1"
             },
-            "scope": 415,
+            "scope": 409,
             "src": "1159:73:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1278,7 +1278,7 @@
           },
           {
             "body": {
-              "id": 284,
+              "id": 278,
               "nodeType": "Block",
               "src": "1442:249:1",
               "statements": [
@@ -1288,11 +1288,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 265,
+                            "id": 259,
                             "name": "BLACKLIST_MANAGER_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 227,
+                            "referencedDeclaration": 221,
                             "src": "1468:22:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -1303,18 +1303,18 @@
                             "arguments": [],
                             "expression": {
                               "argumentTypes": [],
-                              "id": 266,
+                              "id": 260,
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 444,
+                              "referencedDeclaration": 438,
                               "src": "1492:10:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
                                 "typeString": "function () view returns (address payable)"
                               }
                             },
-                            "id": 267,
+                            "id": 261,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1341,18 +1341,18 @@
                               "typeString": "address payable"
                             }
                           ],
-                          "id": 264,
+                          "id": 258,
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 553,
+                          "referencedDeclaration": 547,
                           "src": "1460:7:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
                             "typeString": "function (bytes32,address) view returns (bool)"
                           }
                         },
-                        "id": 268,
+                        "id": 262,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1369,7 +1369,7 @@
                       },
                       {
                         "hexValue": "41646472657373426c6f636b61626c653a206d757374206861766520626c61636b6c697374206d616e6167657220726f6c6520746f20616464",
-                        "id": 269,
+                        "id": 263,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1395,7 +1395,7 @@
                           "typeString": "literal_string \"AddressBlockable: must have blacklist manager role to add\""
                         }
                       ],
-                      "id": 263,
+                      "id": 257,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1409,7 +1409,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 270,
+                    "id": 264,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1424,7 +1424,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 271,
+                  "id": 265,
                   "nodeType": "ExpressionStatement",
                   "src": "1452:115:1"
                 },
@@ -1432,11 +1432,11 @@
                   "condition": {
                     "arguments": [
                       {
-                        "id": 274,
+                        "id": 268,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 260,
+                        "referencedDeclaration": 254,
                         "src": "1608:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1452,32 +1452,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 272,
+                        "id": 266,
                         "name": "_blacklistedAddresses",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 222,
+                        "referencedDeclaration": 216,
                         "src": "1582:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_AddressSet_$2312_storage",
+                          "typeIdentifier": "t_struct$_AddressSet_$2306_storage",
                           "typeString": "struct EnumerableSetUpgradeable.AddressSet storage ref"
                         }
                       },
-                      "id": 273,
+                      "id": 267,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2335,
+                      "referencedDeclaration": 2329,
                       "src": "1582:25:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_AddressSet_$2312_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_AddressSet_$2312_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_AddressSet_$2306_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_AddressSet_$2306_storage_ptr_$",
                         "typeString": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer,address) returns (bool)"
                       }
                     },
-                    "id": 275,
+                    "id": 269,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1492,11 +1492,11 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 283,
+                  "id": 277,
                   "nodeType": "IfStatement",
                   "src": "1578:107:1",
                   "trueBody": {
-                    "id": 282,
+                    "id": 276,
                     "nodeType": "Block",
                     "src": "1618:67:1",
                     "statements": [
@@ -1504,11 +1504,11 @@
                         "eventCall": {
                           "arguments": [
                             {
-                              "id": 277,
+                              "id": 271,
                               "name": "account",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 260,
+                              "referencedDeclaration": 254,
                               "src": "1652:7:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -1519,18 +1519,18 @@
                               "arguments": [],
                               "expression": {
                                 "argumentTypes": [],
-                                "id": 278,
+                                "id": 272,
                                 "name": "_msgSender",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 444,
+                                "referencedDeclaration": 438,
                                 "src": "1661:10:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
                                   "typeString": "function () view returns (address payable)"
                                 }
                               },
-                              "id": 279,
+                              "id": 273,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1557,18 +1557,18 @@
                                 "typeString": "address payable"
                               }
                             ],
-                            "id": 276,
+                            "id": 270,
                             "name": "BlacklistAdded",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 233,
+                            "referencedDeclaration": 227,
                             "src": "1637:14:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$returns$__$",
                               "typeString": "function (address,address)"
                             }
                           },
-                          "id": 280,
+                          "id": 274,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1583,7 +1583,7 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 281,
+                        "id": 275,
                         "nodeType": "EmitStatement",
                         "src": "1632:42:1"
                       }
@@ -1593,29 +1593,29 @@
               ]
             },
             "documentation": {
-              "id": 258,
+              "id": 252,
               "nodeType": "StructuredDocumentation",
               "src": "1238:151:1",
               "text": " @dev Add an address to blacklist\n Requirements:\n - the caller must have ``role``'s blacklist manager role."
             },
             "functionSelector": "44337ea1",
-            "id": 285,
+            "id": 279,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "addToBlacklist",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 261,
+              "id": 255,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 260,
+                  "id": 254,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 285,
+                  "scope": 279,
                   "src": "1418:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1624,7 +1624,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 259,
+                    "id": 253,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1418:7:1",
@@ -1640,12 +1640,12 @@
               "src": "1417:17:1"
             },
             "returnParameters": {
-              "id": 262,
+              "id": 256,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1442:0:1"
             },
-            "scope": 415,
+            "scope": 409,
             "src": "1394:297:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1653,7 +1653,7 @@
           },
           {
             "body": {
-              "id": 312,
+              "id": 306,
               "nodeType": "Block",
               "src": "1911:257:1",
               "statements": [
@@ -1663,11 +1663,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 293,
+                            "id": 287,
                             "name": "BLACKLIST_MANAGER_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 227,
+                            "referencedDeclaration": 221,
                             "src": "1937:22:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -1678,18 +1678,18 @@
                             "arguments": [],
                             "expression": {
                               "argumentTypes": [],
-                              "id": 294,
+                              "id": 288,
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 444,
+                              "referencedDeclaration": 438,
                               "src": "1961:10:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
                                 "typeString": "function () view returns (address payable)"
                               }
                             },
-                            "id": 295,
+                            "id": 289,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1716,18 +1716,18 @@
                               "typeString": "address payable"
                             }
                           ],
-                          "id": 292,
+                          "id": 286,
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 553,
+                          "referencedDeclaration": 547,
                           "src": "1929:7:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
                             "typeString": "function (bytes32,address) view returns (bool)"
                           }
                         },
-                        "id": 296,
+                        "id": 290,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1744,7 +1744,7 @@
                       },
                       {
                         "hexValue": "41646472657373426c6f636b61626c653a206d757374206861766520626c61636b6c697374206d616e6167657220726f6c6520746f2072656d6f7665",
-                        "id": 297,
+                        "id": 291,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1770,7 +1770,7 @@
                           "typeString": "literal_string \"AddressBlockable: must have blacklist manager role to remove\""
                         }
                       ],
-                      "id": 291,
+                      "id": 285,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1784,7 +1784,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 298,
+                    "id": 292,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1799,7 +1799,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 299,
+                  "id": 293,
                   "nodeType": "ExpressionStatement",
                   "src": "1921:118:1"
                 },
@@ -1807,11 +1807,11 @@
                   "condition": {
                     "arguments": [
                       {
-                        "id": 302,
+                        "id": 296,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 288,
+                        "referencedDeclaration": 282,
                         "src": "2083:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1827,32 +1827,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 300,
+                        "id": 294,
                         "name": "_blacklistedAddresses",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 222,
+                        "referencedDeclaration": 216,
                         "src": "2054:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_AddressSet_$2312_storage",
+                          "typeIdentifier": "t_struct$_AddressSet_$2306_storage",
                           "typeString": "struct EnumerableSetUpgradeable.AddressSet storage ref"
                         }
                       },
-                      "id": 301,
+                      "id": 295,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "remove",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2358,
+                      "referencedDeclaration": 2352,
                       "src": "2054:28:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_AddressSet_$2312_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_AddressSet_$2312_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_AddressSet_$2306_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_AddressSet_$2306_storage_ptr_$",
                         "typeString": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer,address) returns (bool)"
                       }
                     },
-                    "id": 303,
+                    "id": 297,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1867,11 +1867,11 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 311,
+                  "id": 305,
                   "nodeType": "IfStatement",
                   "src": "2050:112:1",
                   "trueBody": {
-                    "id": 310,
+                    "id": 304,
                     "nodeType": "Block",
                     "src": "2093:69:1",
                     "statements": [
@@ -1879,11 +1879,11 @@
                         "eventCall": {
                           "arguments": [
                             {
-                              "id": 305,
+                              "id": 299,
                               "name": "account",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 288,
+                              "referencedDeclaration": 282,
                               "src": "2129:7:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -1894,18 +1894,18 @@
                               "arguments": [],
                               "expression": {
                                 "argumentTypes": [],
-                                "id": 306,
+                                "id": 300,
                                 "name": "_msgSender",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 444,
+                                "referencedDeclaration": 438,
                                 "src": "2138:10:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
                                   "typeString": "function () view returns (address payable)"
                                 }
                               },
-                              "id": 307,
+                              "id": 301,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1932,18 +1932,18 @@
                                 "typeString": "address payable"
                               }
                             ],
-                            "id": 304,
+                            "id": 298,
                             "name": "BlacklistRemoved",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 233,
                             "src": "2112:16:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$returns$__$",
                               "typeString": "function (address,address)"
                             }
                           },
-                          "id": 308,
+                          "id": 302,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1958,7 +1958,7 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 309,
+                        "id": 303,
                         "nodeType": "EmitStatement",
                         "src": "2107:44:1"
                       }
@@ -1968,29 +1968,29 @@
               ]
             },
             "documentation": {
-              "id": 286,
+              "id": 280,
               "nodeType": "StructuredDocumentation",
               "src": "1697:156:1",
               "text": " @dev Remove an address from blacklist\n Requirements:\n - the caller must have ``role``'s blacklist manager role."
             },
             "functionSelector": "537df3b6",
-            "id": 313,
+            "id": 307,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "removeFromBlacklist",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 289,
+              "id": 283,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 288,
+                  "id": 282,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 313,
+                  "scope": 307,
                   "src": "1887:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1999,7 +1999,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 287,
+                    "id": 281,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1887:7:1",
@@ -2015,12 +2015,12 @@
               "src": "1886:17:1"
             },
             "returnParameters": {
-              "id": 290,
+              "id": 284,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1911:0:1"
             },
-            "scope": 415,
+            "scope": 409,
             "src": "1858:310:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -2028,7 +2028,7 @@
           },
           {
             "body": {
-              "id": 325,
+              "id": 319,
               "nodeType": "Block",
               "src": "2257:63:1",
               "statements": [
@@ -2036,11 +2036,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 322,
+                        "id": 316,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 315,
+                        "referencedDeclaration": 309,
                         "src": "2305:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2056,32 +2056,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 320,
+                        "id": 314,
                         "name": "_blacklistedAddresses",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 222,
+                        "referencedDeclaration": 216,
                         "src": "2274:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_AddressSet_$2312_storage",
+                          "typeIdentifier": "t_struct$_AddressSet_$2306_storage",
                           "typeString": "struct EnumerableSetUpgradeable.AddressSet storage ref"
                         }
                       },
-                      "id": 321,
+                      "id": 315,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "contains",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2381,
+                      "referencedDeclaration": 2375,
                       "src": "2274:30:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$2312_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_AddressSet_$2312_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$2306_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_AddressSet_$2306_storage_ptr_$",
                         "typeString": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer,address) view returns (bool)"
                       }
                     },
-                    "id": 323,
+                    "id": 317,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2096,31 +2096,31 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 319,
-                  "id": 324,
+                  "functionReturnParameters": 313,
+                  "id": 318,
                   "nodeType": "Return",
                   "src": "2267:46:1"
                 }
               ]
             },
             "functionSelector": "fe575a87",
-            "id": 326,
+            "id": 320,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isBlacklisted",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 316,
+              "id": 310,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 315,
+                  "id": 309,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 326,
+                  "scope": 320,
                   "src": "2213:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2129,7 +2129,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 314,
+                    "id": 308,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2213:7:1",
@@ -2145,16 +2145,16 @@
               "src": "2212:17:1"
             },
             "returnParameters": {
-              "id": 319,
+              "id": 313,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 318,
+                  "id": 312,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 326,
+                  "scope": 320,
                   "src": "2251:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2163,7 +2163,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 317,
+                    "id": 311,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "2251:4:1",
@@ -2177,7 +2177,7 @@
               ],
               "src": "2250:6:1"
             },
-            "scope": 415,
+            "scope": 409,
             "src": "2190:130:1",
             "stateMutability": "view",
             "virtual": false,
@@ -2185,7 +2185,7 @@
           },
           {
             "body": {
-              "id": 345,
+              "id": 339,
               "nodeType": "Block",
               "src": "2478:181:1",
               "statements": [
@@ -2195,11 +2195,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 334,
+                            "id": 328,
                             "name": "BLACKLIST_MANAGER_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 227,
+                            "referencedDeclaration": 221,
                             "src": "2504:22:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -2210,18 +2210,18 @@
                             "arguments": [],
                             "expression": {
                               "argumentTypes": [],
-                              "id": 335,
+                              "id": 329,
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 444,
+                              "referencedDeclaration": 438,
                               "src": "2528:10:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
                                 "typeString": "function () view returns (address payable)"
                               }
                             },
-                            "id": 336,
+                            "id": 330,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2248,18 +2248,18 @@
                               "typeString": "address payable"
                             }
                           ],
-                          "id": 333,
+                          "id": 327,
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 553,
+                          "referencedDeclaration": 547,
                           "src": "2496:7:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
                             "typeString": "function (bytes32,address) view returns (bool)"
                           }
                         },
-                        "id": 337,
+                        "id": 331,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2276,7 +2276,7 @@
                       },
                       {
                         "hexValue": "41646472657373426c6f636b61626c653a206d757374206861766520626c61636b6c697374206d616e6167657220726f6c6520746f2076696577",
-                        "id": 338,
+                        "id": 332,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2302,7 +2302,7 @@
                           "typeString": "literal_string \"AddressBlockable: must have blacklist manager role to view\""
                         }
                       ],
-                      "id": 332,
+                      "id": 326,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -2316,7 +2316,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 339,
+                    "id": 333,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2331,7 +2331,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 340,
+                  "id": 334,
                   "nodeType": "ExpressionStatement",
                   "src": "2488:116:1"
                 },
@@ -2341,32 +2341,32 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 341,
+                        "id": 335,
                         "name": "_blacklistedAddresses",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 222,
+                        "referencedDeclaration": 216,
                         "src": "2622:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_AddressSet_$2312_storage",
+                          "typeIdentifier": "t_struct$_AddressSet_$2306_storage",
                           "typeString": "struct EnumerableSetUpgradeable.AddressSet storage ref"
                         }
                       },
-                      "id": 342,
+                      "id": 336,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "length",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2395,
+                      "referencedDeclaration": 2389,
                       "src": "2622:28:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$2312_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_AddressSet_$2312_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$2306_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_AddressSet_$2306_storage_ptr_$",
                         "typeString": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 343,
+                    "id": 337,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2381,43 +2381,43 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 331,
-                  "id": 344,
+                  "functionReturnParameters": 325,
+                  "id": 338,
                   "nodeType": "Return",
                   "src": "2615:37:1"
                 }
               ]
             },
             "documentation": {
-              "id": 327,
+              "id": 321,
               "nodeType": "StructuredDocumentation",
               "src": "2326:77:1",
               "text": " @dev Returns the number of accounts those are in blacklist"
             },
             "functionSelector": "1358a3b8",
-            "id": 346,
+            "id": 340,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getBlacklistedAddressesCount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 328,
+              "id": 322,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2445:2:1"
             },
             "returnParameters": {
-              "id": 331,
+              "id": 325,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 330,
+                  "id": 324,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 346,
+                  "scope": 340,
                   "src": "2469:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2426,7 +2426,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 329,
+                    "id": 323,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2469:7:1",
@@ -2440,7 +2440,7 @@
               ],
               "src": "2468:9:1"
             },
-            "scope": 415,
+            "scope": 409,
             "src": "2408:251:1",
             "stateMutability": "view",
             "virtual": false,
@@ -2448,7 +2448,7 @@
           },
           {
             "body": {
-              "id": 376,
+              "id": 370,
               "nodeType": "Block",
               "src": "2825:280:1",
               "statements": [
@@ -2458,11 +2458,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 356,
+                            "id": 350,
                             "name": "BLACKLIST_MANAGER_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 227,
+                            "referencedDeclaration": 221,
                             "src": "2851:22:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -2473,18 +2473,18 @@
                             "arguments": [],
                             "expression": {
                               "argumentTypes": [],
-                              "id": 357,
+                              "id": 351,
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 444,
+                              "referencedDeclaration": 438,
                               "src": "2875:10:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
                                 "typeString": "function () view returns (address payable)"
                               }
                             },
-                            "id": 358,
+                            "id": 352,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2511,18 +2511,18 @@
                               "typeString": "address payable"
                             }
                           ],
-                          "id": 355,
+                          "id": 349,
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 553,
+                          "referencedDeclaration": 547,
                           "src": "2843:7:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
                             "typeString": "function (bytes32,address) view returns (bool)"
                           }
                         },
-                        "id": 359,
+                        "id": 353,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2539,7 +2539,7 @@
                       },
                       {
                         "hexValue": "41646472657373426c6f636b61626c653a206d757374206861766520626c61636b6c697374206d616e6167657220726f6c6520746f2076696577",
-                        "id": 360,
+                        "id": 354,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2565,7 +2565,7 @@
                           "typeString": "literal_string \"AddressBlockable: must have blacklist manager role to view\""
                         }
                       ],
-                      "id": 354,
+                      "id": 348,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -2579,7 +2579,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 361,
+                    "id": 355,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2594,7 +2594,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 362,
+                  "id": 356,
                   "nodeType": "ExpressionStatement",
                   "src": "2835:116:1"
                 },
@@ -2606,17 +2606,17 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 367,
+                        "id": 361,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 364,
+                          "id": 358,
                           "name": "index",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 349,
+                          "referencedDeclaration": 343,
                           "src": "2969:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2629,18 +2629,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 365,
+                            "id": 359,
                             "name": "getBlacklistedAddressesCount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 346,
+                            "referencedDeclaration": 340,
                             "src": "2977:28:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
                               "typeString": "function () view returns (uint256)"
                             }
                           },
-                          "id": 366,
+                          "id": 360,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2663,7 +2663,7 @@
                       },
                       {
                         "hexValue": "41646472657373426c6f636b61626c653a20696e6465782065786365656473206c656e677468",
-                        "id": 368,
+                        "id": 362,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2689,7 +2689,7 @@
                           "typeString": "literal_string \"AddressBlockable: index exceeds length\""
                         }
                       ],
-                      "id": 363,
+                      "id": 357,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -2703,7 +2703,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 369,
+                    "id": 363,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2718,7 +2718,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 370,
+                  "id": 364,
                   "nodeType": "ExpressionStatement",
                   "src": "2961:89:1"
                 },
@@ -2726,11 +2726,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 373,
+                        "id": 367,
                         "name": "index",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 349,
+                        "referencedDeclaration": 343,
                         "src": "3092:5:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2746,32 +2746,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 371,
+                        "id": 365,
                         "name": "_blacklistedAddresses",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 222,
+                        "referencedDeclaration": 216,
                         "src": "3067:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_AddressSet_$2312_storage",
+                          "typeIdentifier": "t_struct$_AddressSet_$2306_storage",
                           "typeString": "struct EnumerableSetUpgradeable.AddressSet storage ref"
                         }
                       },
-                      "id": 372,
+                      "id": 366,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "at",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2418,
+                      "referencedDeclaration": 2412,
                       "src": "3067:24:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$2312_storage_ptr_$_t_uint256_$returns$_t_address_$bound_to$_t_struct$_AddressSet_$2312_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$2306_storage_ptr_$_t_uint256_$returns$_t_address_$bound_to$_t_struct$_AddressSet_$2306_storage_ptr_$",
                         "typeString": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer,uint256) view returns (address)"
                       }
                     },
-                    "id": 374,
+                    "id": 368,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2786,37 +2786,37 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 353,
-                  "id": 375,
+                  "functionReturnParameters": 347,
+                  "id": 369,
                   "nodeType": "Return",
                   "src": "3060:38:1"
                 }
               ]
             },
             "documentation": {
-              "id": 347,
+              "id": 341,
               "nodeType": "StructuredDocumentation",
               "src": "2665:77:1",
               "text": " @dev Returns the number of accounts those are in blacklist"
             },
             "functionSelector": "27b1bfac",
-            "id": 377,
+            "id": 371,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getBlacklistedAddressAt",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 350,
+              "id": 344,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 349,
+                  "id": 343,
                   "mutability": "mutable",
                   "name": "index",
                   "nodeType": "VariableDeclaration",
-                  "scope": 377,
+                  "scope": 371,
                   "src": "2780:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2825,7 +2825,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 348,
+                    "id": 342,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2780:7:1",
@@ -2840,16 +2840,16 @@
               "src": "2779:15:1"
             },
             "returnParameters": {
-              "id": 353,
+              "id": 347,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 352,
+                  "id": 346,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 377,
+                  "scope": 371,
                   "src": "2816:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2858,7 +2858,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 351,
+                    "id": 345,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2816:7:1",
@@ -2873,7 +2873,7 @@
               ],
               "src": "2815:9:1"
             },
-            "scope": 415,
+            "scope": 409,
             "src": "2747:358:1",
             "stateMutability": "view",
             "virtual": false,
@@ -2881,10 +2881,10 @@
           },
           {
             "baseFunctions": [
-              1709
+              1703
             ],
             "body": {
-              "id": 409,
+              "id": 403,
               "nodeType": "Block",
               "src": "3271:171:1",
               "statements": [
@@ -2892,11 +2892,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 391,
+                        "id": 385,
                         "name": "from",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 380,
+                        "referencedDeclaration": 374,
                         "src": "3308:4:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2904,11 +2904,11 @@
                         }
                       },
                       {
-                        "id": 392,
+                        "id": 386,
                         "name": "to",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 382,
+                        "referencedDeclaration": 376,
                         "src": "3314:2:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2916,11 +2916,11 @@
                         }
                       },
                       {
-                        "id": 393,
+                        "id": 387,
                         "name": "amount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 384,
+                        "referencedDeclaration": 378,
                         "src": "3318:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2944,32 +2944,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 388,
+                        "id": 382,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4294967271,
                         "src": "3281:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_AddressBlockableUpgradeable_$415",
+                          "typeIdentifier": "t_super$_AddressBlockableUpgradeable_$409",
                           "typeString": "contract super AddressBlockableUpgradeable"
                         }
                       },
-                      "id": 390,
+                      "id": 384,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "_beforeTokenTransfer",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1709,
+                      "referencedDeclaration": 1703,
                       "src": "3281:26:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,address,uint256)"
                       }
                     },
-                    "id": 394,
+                    "id": 388,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2984,7 +2984,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 395,
+                  "id": 389,
                   "nodeType": "ExpressionStatement",
                   "src": "3281:44:1"
                 },
@@ -2996,13 +2996,13 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 405,
+                        "id": 399,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 400,
+                          "id": 394,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3014,11 +3014,11 @@
                           "subExpression": {
                             "arguments": [
                               {
-                                "id": 398,
+                                "id": 392,
                                 "name": "from",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 380,
+                                "referencedDeclaration": 374,
                                 "src": "3358:4:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_address",
@@ -3033,18 +3033,18 @@
                                   "typeString": "address"
                                 }
                               ],
-                              "id": 397,
+                              "id": 391,
                               "name": "isBlacklisted",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 326,
+                              "referencedDeclaration": 320,
                               "src": "3344:13:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                                 "typeString": "function (address) view returns (bool)"
                               }
                             },
-                            "id": 399,
+                            "id": 393,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3067,7 +3067,7 @@
                         "nodeType": "BinaryOperation",
                         "operator": "&&",
                         "rightExpression": {
-                          "id": 404,
+                          "id": 398,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3079,11 +3079,11 @@
                           "subExpression": {
                             "arguments": [
                               {
-                                "id": 402,
+                                "id": 396,
                                 "name": "to",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 382,
+                                "referencedDeclaration": 376,
                                 "src": "3382:2:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_address",
@@ -3098,18 +3098,18 @@
                                   "typeString": "address"
                                 }
                               ],
-                              "id": 401,
+                              "id": 395,
                               "name": "isBlacklisted",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 326,
+                              "referencedDeclaration": 320,
                               "src": "3368:13:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                                 "typeString": "function (address) view returns (bool)"
                               }
                             },
-                            "id": 403,
+                            "id": 397,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3137,7 +3137,7 @@
                       },
                       {
                         "hexValue": "41646472657373426c6f636b61626c653a20696e76616c69642073656e646572206f7220726563697069656e74",
-                        "id": 406,
+                        "id": 400,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3163,7 +3163,7 @@
                           "typeString": "literal_string \"AddressBlockable: invalid sender or recipient\""
                         }
                       ],
-                      "id": 396,
+                      "id": 390,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -3177,7 +3177,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 407,
+                    "id": 401,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3192,41 +3192,41 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 408,
+                  "id": 402,
                   "nodeType": "ExpressionStatement",
                   "src": "3335:100:1"
                 }
               ]
             },
             "documentation": {
-              "id": 378,
+              "id": 372,
               "nodeType": "StructuredDocumentation",
               "src": "3111:57:1",
               "text": " @dev See {ERC20-_beforeTokenTransfer}."
             },
-            "id": 410,
+            "id": 404,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_beforeTokenTransfer",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 386,
+              "id": 380,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
               "src": "3262:8:1"
             },
             "parameters": {
-              "id": 385,
+              "id": 379,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 380,
+                  "id": 374,
                   "mutability": "mutable",
                   "name": "from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 410,
+                  "scope": 404,
                   "src": "3203:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3235,7 +3235,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 379,
+                    "id": 373,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3203:7:1",
@@ -3249,11 +3249,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 382,
+                  "id": 376,
                   "mutability": "mutable",
                   "name": "to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 410,
+                  "scope": 404,
                   "src": "3217:10:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3262,7 +3262,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 381,
+                    "id": 375,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3217:7:1",
@@ -3276,11 +3276,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 384,
+                  "id": 378,
                   "mutability": "mutable",
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 410,
+                  "scope": 404,
                   "src": "3229:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3289,7 +3289,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 383,
+                    "id": 377,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3229:7:1",
@@ -3304,12 +3304,12 @@
               "src": "3202:42:1"
             },
             "returnParameters": {
-              "id": 387,
+              "id": 381,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3271:0:1"
             },
-            "scope": 415,
+            "scope": 409,
             "src": "3173:269:1",
             "stateMutability": "nonpayable",
             "virtual": true,
@@ -3317,11 +3317,11 @@
           },
           {
             "constant": false,
-            "id": 414,
+            "id": 408,
             "mutability": "mutable",
             "name": "__gap",
             "nodeType": "VariableDeclaration",
-            "scope": 415,
+            "scope": 409,
             "src": "3447:25:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3331,7 +3331,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 411,
+                "id": 405,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "3447:7:1",
@@ -3340,10 +3340,10 @@
                   "typeString": "uint256"
                 }
               },
-              "id": 413,
+              "id": 407,
               "length": {
                 "hexValue": "3530",
-                "id": 412,
+                "id": 406,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3367,7 +3367,7 @@
             "visibility": "private"
           }
         ],
-        "scope": 416,
+        "scope": 410,
         "src": "457:3018:1"
       }
     ],
@@ -3378,31 +3378,31 @@
       "absolutePath": "/Users/hieptran/Documents/Projects/nami/NAMI-smart-contract-v2/contracts/utils/AddressBlockableUpgradeable.sol",
       "exportedSymbols": {
         "AccessControlUpgradeable": [
-          768
+          762
         ],
         "AddressBlockableUpgradeable": [
-          415
+          409
         ],
         "AddressUpgradeable": [
-          2036
+          2030
         ],
         "ContextUpgradeable": [
-          460
+          454
         ],
         "ERC20Upgradeable": [
-          1714
+          1708
         ],
         "EnumerableSetUpgradeable": [
-          2516
+          2510
         ],
         "IERC20Upgradeable": [
-          1792
+          1786
         ],
         "Initializable": [
-          1035
+          1029
         ],
         "SafeMathUpgradeable": [
-          964
+          958
         ]
       },
       "license": "MIT"
@@ -3417,67 +3417,67 @@
             ".0"
           ]
         },
-        "id": 203,
+        "id": 197,
         "name": "PragmaDirective",
         "src": "33:23:1"
       },
       {
         "attributes": {
-          "SourceUnit": 2517,
+          "SourceUnit": 2511,
           "absolutePath": "@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol",
           "file": "@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol",
-          "scope": 416,
+          "scope": 410,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 204,
+        "id": 198,
         "name": "ImportDirective",
         "src": "58:80:1"
       },
       {
         "attributes": {
-          "SourceUnit": 2037,
+          "SourceUnit": 2031,
           "absolutePath": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
           "file": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
-          "scope": 416,
+          "scope": 410,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 205,
+        "id": 199,
         "name": "ImportDirective",
         "src": "139:74:1"
       },
       {
         "attributes": {
-          "SourceUnit": 769,
+          "SourceUnit": 763,
           "absolutePath": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
           "file": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
-          "scope": 416,
+          "scope": 410,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 206,
+        "id": 200,
         "name": "ImportDirective",
         "src": "214:81:1"
       },
       {
         "attributes": {
-          "SourceUnit": 1715,
+          "SourceUnit": 1709,
           "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
           "file": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
-          "scope": 416,
+          "scope": 410,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 207,
+        "id": 201,
         "name": "ImportDirective",
         "src": "296:78:1"
       },
@@ -3485,31 +3485,31 @@
         "attributes": {
           "abstract": true,
           "contractDependencies": [
-            460,
-            768,
-            1035,
-            1714,
-            1792
+            454,
+            762,
+            1029,
+            1708,
+            1786
           ],
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            415,
-            768,
-            1714,
-            1792,
-            460,
-            1035
+            409,
+            762,
+            1708,
+            1786,
+            454,
+            1029
           ],
           "name": "AddressBlockableUpgradeable",
-          "scope": 416
+          "scope": 410
         },
         "children": [
           {
             "attributes": {
               "text": " @dev Contract module that allows blocking addresses from transferring"
             },
-            "id": 208,
+            "id": 202,
             "name": "StructuredDocumentation",
             "src": "376:80:1"
           },
@@ -3519,15 +3519,15 @@
               {
                 "attributes": {
                   "name": "Initializable",
-                  "referencedDeclaration": 1035,
+                  "referencedDeclaration": 1029,
                   "type": "contract Initializable"
                 },
-                "id": 209,
+                "id": 203,
                 "name": "UserDefinedTypeName",
                 "src": "506:13:1"
               }
             ],
-            "id": 210,
+            "id": 204,
             "name": "InheritanceSpecifier",
             "src": "506:13:1"
           },
@@ -3537,15 +3537,15 @@
               {
                 "attributes": {
                   "name": "ERC20Upgradeable",
-                  "referencedDeclaration": 1714,
+                  "referencedDeclaration": 1708,
                   "type": "contract ERC20Upgradeable"
                 },
-                "id": 211,
+                "id": 205,
                 "name": "UserDefinedTypeName",
                 "src": "521:16:1"
               }
             ],
-            "id": 212,
+            "id": 206,
             "name": "InheritanceSpecifier",
             "src": "521:16:1"
           },
@@ -3555,15 +3555,15 @@
               {
                 "attributes": {
                   "name": "AccessControlUpgradeable",
-                  "referencedDeclaration": 768,
+                  "referencedDeclaration": 762,
                   "type": "contract AccessControlUpgradeable"
                 },
-                "id": 213,
+                "id": 207,
                 "name": "UserDefinedTypeName",
                 "src": "539:24:1"
               }
             ],
-            "id": 214,
+            "id": 208,
             "name": "InheritanceSpecifier",
             "src": "539:24:1"
           },
@@ -3572,25 +3572,25 @@
               {
                 "attributes": {
                   "name": "EnumerableSetUpgradeable",
-                  "referencedDeclaration": 2516,
+                  "referencedDeclaration": 2510,
                   "type": "library EnumerableSetUpgradeable"
                 },
-                "id": 215,
+                "id": 209,
                 "name": "UserDefinedTypeName",
                 "src": "576:24:1"
               },
               {
                 "attributes": {
                   "name": "EnumerableSetUpgradeable.AddressSet",
-                  "referencedDeclaration": 2312,
+                  "referencedDeclaration": 2306,
                   "type": "struct EnumerableSetUpgradeable.AddressSet"
                 },
-                "id": 216,
+                "id": 210,
                 "name": "UserDefinedTypeName",
                 "src": "605:35:1"
               }
             ],
-            "id": 217,
+            "id": 211,
             "name": "UsingForDirective",
             "src": "570:71:1"
           },
@@ -3599,10 +3599,10 @@
               {
                 "attributes": {
                   "name": "AddressUpgradeable",
-                  "referencedDeclaration": 2036,
+                  "referencedDeclaration": 2030,
                   "type": "library AddressUpgradeable"
                 },
-                "id": 218,
+                "id": 212,
                 "name": "UserDefinedTypeName",
                 "src": "652:18:1"
               },
@@ -3612,12 +3612,12 @@
                   "stateMutability": "nonpayable",
                   "type": "address"
                 },
-                "id": 219,
+                "id": 213,
                 "name": "ElementaryTypeName",
                 "src": "675:7:1"
               }
             ],
-            "id": 220,
+            "id": 214,
             "name": "UsingForDirective",
             "src": "646:37:1"
           },
@@ -3626,7 +3626,7 @@
               "constant": false,
               "mutability": "mutable",
               "name": "_blacklistedAddresses",
-              "scope": 415,
+              "scope": 409,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "struct EnumerableSetUpgradeable.AddressSet",
@@ -3636,15 +3636,15 @@
               {
                 "attributes": {
                   "name": "EnumerableSetUpgradeable.AddressSet",
-                  "referencedDeclaration": 2312,
+                  "referencedDeclaration": 2306,
                   "type": "struct EnumerableSetUpgradeable.AddressSet"
                 },
-                "id": 221,
+                "id": 215,
                 "name": "UserDefinedTypeName",
                 "src": "689:35:1"
               }
             ],
-            "id": 222,
+            "id": 216,
             "name": "VariableDeclaration",
             "src": "689:65:1"
           },
@@ -3654,7 +3654,7 @@
               "functionSelector": "410b2424",
               "mutability": "constant",
               "name": "BLACKLIST_MANAGER_ROLE",
-              "scope": 415,
+              "scope": 409,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bytes32",
@@ -3666,7 +3666,7 @@
                   "name": "bytes32",
                   "type": "bytes32"
                 },
-                "id": 223,
+                "id": 217,
                 "name": "ElementaryTypeName",
                 "src": "760:7:1"
               },
@@ -3700,7 +3700,7 @@
                       "type": "function (bytes memory) pure returns (bytes32)",
                       "value": "keccak256"
                     },
-                    "id": 224,
+                    "id": 218,
                     "name": "Identifier",
                     "src": "809:9:1"
                   },
@@ -3715,17 +3715,17 @@
                       "type": "literal_string \"BLACKLIST_MANAGER_ROLE\"",
                       "value": "BLACKLIST_MANAGER_ROLE"
                     },
-                    "id": 225,
+                    "id": 219,
                     "name": "Literal",
                     "src": "819:24:1"
                   }
                 ],
-                "id": 226,
+                "id": 220,
                 "name": "FunctionCall",
                 "src": "809:35:1"
               }
             ],
-            "id": 227,
+            "id": 221,
             "name": "VariableDeclaration",
             "src": "760:84:1"
           },
@@ -3733,6 +3733,80 @@
             "attributes": {
               "anonymous": false,
               "name": "BlacklistAdded"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "account",
+                      "scope": 227,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 222,
+                        "name": "ElementaryTypeName",
+                        "src": "886:7:1"
+                      }
+                    ],
+                    "id": 223,
+                    "name": "VariableDeclaration",
+                    "src": "886:15:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": true,
+                      "mutability": "mutable",
+                      "name": "sender",
+                      "scope": 227,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 224,
+                        "name": "ElementaryTypeName",
+                        "src": "903:7:1"
+                      }
+                    ],
+                    "id": 225,
+                    "name": "VariableDeclaration",
+                    "src": "903:22:1"
+                  }
+                ],
+                "id": 226,
+                "name": "ParameterList",
+                "src": "885:41:1"
+              }
+            ],
+            "id": 227,
+            "name": "EventDefinition",
+            "src": "865:62:1"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "BlacklistRemoved"
             },
             "children": [
               {
@@ -3758,12 +3832,12 @@
                         },
                         "id": 228,
                         "name": "ElementaryTypeName",
-                        "src": "886:7:1"
+                        "src": "955:7:1"
                       }
                     ],
                     "id": 229,
                     "name": "VariableDeclaration",
-                    "src": "886:15:1"
+                    "src": "955:15:1"
                   },
                   {
                     "attributes": {
@@ -3786,94 +3860,20 @@
                         },
                         "id": 230,
                         "name": "ElementaryTypeName",
-                        "src": "903:7:1"
+                        "src": "972:7:1"
                       }
                     ],
                     "id": 231,
                     "name": "VariableDeclaration",
-                    "src": "903:22:1"
+                    "src": "972:22:1"
                   }
                 ],
                 "id": 232,
                 "name": "ParameterList",
-                "src": "885:41:1"
-              }
-            ],
-            "id": 233,
-            "name": "EventDefinition",
-            "src": "865:62:1"
-          },
-          {
-            "attributes": {
-              "anonymous": false,
-              "name": "BlacklistRemoved"
-            },
-            "children": [
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "indexed": false,
-                      "mutability": "mutable",
-                      "name": "account",
-                      "scope": 239,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "address",
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "address",
-                          "stateMutability": "nonpayable",
-                          "type": "address"
-                        },
-                        "id": 234,
-                        "name": "ElementaryTypeName",
-                        "src": "955:7:1"
-                      }
-                    ],
-                    "id": 235,
-                    "name": "VariableDeclaration",
-                    "src": "955:15:1"
-                  },
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "indexed": true,
-                      "mutability": "mutable",
-                      "name": "sender",
-                      "scope": 239,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "address",
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "address",
-                          "stateMutability": "nonpayable",
-                          "type": "address"
-                        },
-                        "id": 236,
-                        "name": "ElementaryTypeName",
-                        "src": "972:7:1"
-                      }
-                    ],
-                    "id": 237,
-                    "name": "VariableDeclaration",
-                    "src": "972:22:1"
-                  }
-                ],
-                "id": 238,
-                "name": "ParameterList",
                 "src": "954:41:1"
               }
             ],
-            "id": 239,
+            "id": 233,
             "name": "EventDefinition",
             "src": "932:64:1"
           },
@@ -3883,7 +3883,7 @@
               "isConstructor": false,
               "kind": "function",
               "name": "__AddressBlockable_init",
-              "scope": 415,
+              "scope": 409,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "internal"
@@ -3896,7 +3896,7 @@
                   ]
                 },
                 "children": [],
-                "id": 240,
+                "id": 234,
                 "name": "ParameterList",
                 "src": "1035:2:1"
               },
@@ -3907,7 +3907,7 @@
                   ]
                 },
                 "children": [],
-                "id": 243,
+                "id": 237,
                 "name": "ParameterList",
                 "src": "1059:0:1"
               },
@@ -3919,16 +3919,16 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 1012,
+                      "referencedDeclaration": 1006,
                       "type": "modifier ()",
                       "value": "initializer"
                     },
-                    "id": 241,
+                    "id": 235,
                     "name": "Identifier",
                     "src": "1047:11:1"
                   }
                 ],
-                "id": 242,
+                "id": 236,
                 "name": "ModifierInvocation",
                 "src": "1047:11:1"
               },
@@ -3962,21 +3962,21 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 489,
+                              "referencedDeclaration": 483,
                               "type": "function ()",
                               "value": "__AccessControl_init_unchained"
                             },
-                            "id": 244,
+                            "id": 238,
                             "name": "Identifier",
                             "src": "1069:30:1"
                           }
                         ],
-                        "id": 245,
+                        "id": 239,
                         "name": "FunctionCall",
                         "src": "1069:32:1"
                       }
                     ],
-                    "id": 246,
+                    "id": 240,
                     "name": "ExpressionStatement",
                     "src": "1069:32:1"
                   },
@@ -4008,31 +4008,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 257,
+                              "referencedDeclaration": 251,
                               "type": "function ()",
                               "value": "__AddressBlockable_init_unchained"
                             },
-                            "id": 247,
+                            "id": 241,
                             "name": "Identifier",
                             "src": "1111:33:1"
                           }
                         ],
-                        "id": 248,
+                        "id": 242,
                         "name": "FunctionCall",
                         "src": "1111:35:1"
                       }
                     ],
-                    "id": 249,
+                    "id": 243,
                     "name": "ExpressionStatement",
                     "src": "1111:35:1"
                   }
                 ],
-                "id": 250,
+                "id": 244,
                 "name": "Block",
                 "src": "1059:94:1"
               }
             ],
-            "id": 251,
+            "id": 245,
             "name": "FunctionDefinition",
             "src": "1003:150:1"
           },
@@ -4042,7 +4042,7 @@
               "isConstructor": false,
               "kind": "function",
               "name": "__AddressBlockable_init_unchained",
-              "scope": 415,
+              "scope": 409,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "internal"
@@ -4055,7 +4055,7 @@
                   ]
                 },
                 "children": [],
-                "id": 252,
+                "id": 246,
                 "name": "ParameterList",
                 "src": "1201:2:1"
               },
@@ -4066,7 +4066,7 @@
                   ]
                 },
                 "children": [],
-                "id": 255,
+                "id": 249,
                 "name": "ParameterList",
                 "src": "1225:0:1"
               },
@@ -4078,16 +4078,16 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 1012,
+                      "referencedDeclaration": 1006,
                       "type": "modifier ()",
                       "value": "initializer"
                     },
-                    "id": 253,
+                    "id": 247,
                     "name": "Identifier",
                     "src": "1213:11:1"
                   }
                 ],
-                "id": 254,
+                "id": 248,
                 "name": "ModifierInvocation",
                 "src": "1213:11:1"
               },
@@ -4098,12 +4098,12 @@
                   ]
                 },
                 "children": [],
-                "id": 256,
+                "id": 250,
                 "name": "Block",
                 "src": "1225:7:1"
               }
             ],
-            "id": 257,
+            "id": 251,
             "name": "FunctionDefinition",
             "src": "1159:73:1"
           },
@@ -4117,7 +4117,7 @@
                 null
               ],
               "name": "addToBlacklist",
-              "scope": 415,
+              "scope": 409,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -4127,7 +4127,7 @@
                 "attributes": {
                   "text": " @dev Add an address to blacklist\n Requirements:\n - the caller must have ``role``'s blacklist manager role."
                 },
-                "id": 258,
+                "id": 252,
                 "name": "StructuredDocumentation",
                 "src": "1238:151:1"
               },
@@ -4138,7 +4138,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "account",
-                      "scope": 285,
+                      "scope": 279,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -4151,17 +4151,17 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 259,
+                        "id": 253,
                         "name": "ElementaryTypeName",
                         "src": "1418:7:1"
                       }
                     ],
-                    "id": 260,
+                    "id": 254,
                     "name": "VariableDeclaration",
                     "src": "1418:15:1"
                   }
                 ],
-                "id": 261,
+                "id": 255,
                 "name": "ParameterList",
                 "src": "1417:17:1"
               },
@@ -4172,7 +4172,7 @@
                   ]
                 },
                 "children": [],
-                "id": 262,
+                "id": 256,
                 "name": "ParameterList",
                 "src": "1442:0:1"
               },
@@ -4215,7 +4215,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 263,
+                            "id": 257,
                             "name": "Identifier",
                             "src": "1452:7:1"
                           },
@@ -4249,11 +4249,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 553,
+                                  "referencedDeclaration": 547,
                                   "type": "function (bytes32,address) view returns (bool)",
                                   "value": "hasRole"
                                 },
-                                "id": 264,
+                                "id": 258,
                                 "name": "Identifier",
                                 "src": "1460:7:1"
                               },
@@ -4262,11 +4262,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 227,
+                                  "referencedDeclaration": 221,
                                   "type": "bytes32",
                                   "value": "BLACKLIST_MANAGER_ROLE"
                                 },
-                                "id": 265,
+                                "id": 259,
                                 "name": "Identifier",
                                 "src": "1468:22:1"
                               },
@@ -4296,21 +4296,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 444,
+                                      "referencedDeclaration": 438,
                                       "type": "function () view returns (address payable)",
                                       "value": "_msgSender"
                                     },
-                                    "id": 266,
+                                    "id": 260,
                                     "name": "Identifier",
                                     "src": "1492:10:1"
                                   }
                                 ],
-                                "id": 267,
+                                "id": 261,
                                 "name": "FunctionCall",
                                 "src": "1492:12:1"
                               }
                             ],
-                            "id": 268,
+                            "id": 262,
                             "name": "FunctionCall",
                             "src": "1460:45:1"
                           },
@@ -4325,17 +4325,17 @@
                               "type": "literal_string \"AddressBlockable: must have blacklist manager role to add\"",
                               "value": "AddressBlockable: must have blacklist manager role to add"
                             },
-                            "id": 269,
+                            "id": 263,
                             "name": "Literal",
                             "src": "1507:59:1"
                           }
                         ],
-                        "id": 270,
+                        "id": 264,
                         "name": "FunctionCall",
                         "src": "1452:115:1"
                       }
                     ],
-                    "id": 271,
+                    "id": 265,
                     "name": "ExpressionStatement",
                     "src": "1452:115:1"
                   },
@@ -4370,7 +4370,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "add",
-                              "referencedDeclaration": 2335,
+                              "referencedDeclaration": 2329,
                               "type": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer,address) returns (bool)"
                             },
                             "children": [
@@ -4379,16 +4379,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 222,
+                                  "referencedDeclaration": 216,
                                   "type": "struct EnumerableSetUpgradeable.AddressSet storage ref",
                                   "value": "_blacklistedAddresses"
                                 },
-                                "id": 272,
+                                "id": 266,
                                 "name": "Identifier",
                                 "src": "1582:21:1"
                               }
                             ],
-                            "id": 273,
+                            "id": 267,
                             "name": "MemberAccess",
                             "src": "1582:25:1"
                           },
@@ -4397,16 +4397,16 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 260,
+                              "referencedDeclaration": 254,
                               "type": "address",
                               "value": "account"
                             },
-                            "id": 274,
+                            "id": 268,
                             "name": "Identifier",
                             "src": "1608:7:1"
                           }
                         ],
-                        "id": 275,
+                        "id": 269,
                         "name": "FunctionCall",
                         "src": "1582:34:1"
                       },
@@ -4444,11 +4444,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 233,
+                                      "referencedDeclaration": 227,
                                       "type": "function (address,address)",
                                       "value": "BlacklistAdded"
                                     },
-                                    "id": 276,
+                                    "id": 270,
                                     "name": "Identifier",
                                     "src": "1637:14:1"
                                   },
@@ -4457,11 +4457,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 260,
+                                      "referencedDeclaration": 254,
                                       "type": "address",
                                       "value": "account"
                                     },
-                                    "id": 277,
+                                    "id": 271,
                                     "name": "Identifier",
                                     "src": "1652:7:1"
                                   },
@@ -4491,46 +4491,46 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 444,
+                                          "referencedDeclaration": 438,
                                           "type": "function () view returns (address payable)",
                                           "value": "_msgSender"
                                         },
-                                        "id": 278,
+                                        "id": 272,
                                         "name": "Identifier",
                                         "src": "1661:10:1"
                                       }
                                     ],
-                                    "id": 279,
+                                    "id": 273,
                                     "name": "FunctionCall",
                                     "src": "1661:12:1"
                                   }
                                 ],
-                                "id": 280,
+                                "id": 274,
                                 "name": "FunctionCall",
                                 "src": "1637:37:1"
                               }
                             ],
-                            "id": 281,
+                            "id": 275,
                             "name": "EmitStatement",
                             "src": "1632:42:1"
                           }
                         ],
-                        "id": 282,
+                        "id": 276,
                         "name": "Block",
                         "src": "1618:67:1"
                       }
                     ],
-                    "id": 283,
+                    "id": 277,
                     "name": "IfStatement",
                     "src": "1578:107:1"
                   }
                 ],
-                "id": 284,
+                "id": 278,
                 "name": "Block",
                 "src": "1442:249:1"
               }
             ],
-            "id": 285,
+            "id": 279,
             "name": "FunctionDefinition",
             "src": "1394:297:1"
           },
@@ -4544,7 +4544,7 @@
                 null
               ],
               "name": "removeFromBlacklist",
-              "scope": 415,
+              "scope": 409,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -4554,7 +4554,7 @@
                 "attributes": {
                   "text": " @dev Remove an address from blacklist\n Requirements:\n - the caller must have ``role``'s blacklist manager role."
                 },
-                "id": 286,
+                "id": 280,
                 "name": "StructuredDocumentation",
                 "src": "1697:156:1"
               },
@@ -4565,7 +4565,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "account",
-                      "scope": 313,
+                      "scope": 307,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -4578,17 +4578,17 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 287,
+                        "id": 281,
                         "name": "ElementaryTypeName",
                         "src": "1887:7:1"
                       }
                     ],
-                    "id": 288,
+                    "id": 282,
                     "name": "VariableDeclaration",
                     "src": "1887:15:1"
                   }
                 ],
-                "id": 289,
+                "id": 283,
                 "name": "ParameterList",
                 "src": "1886:17:1"
               },
@@ -4599,7 +4599,7 @@
                   ]
                 },
                 "children": [],
-                "id": 290,
+                "id": 284,
                 "name": "ParameterList",
                 "src": "1911:0:1"
               },
@@ -4642,7 +4642,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 291,
+                            "id": 285,
                             "name": "Identifier",
                             "src": "1921:7:1"
                           },
@@ -4676,11 +4676,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 553,
+                                  "referencedDeclaration": 547,
                                   "type": "function (bytes32,address) view returns (bool)",
                                   "value": "hasRole"
                                 },
-                                "id": 292,
+                                "id": 286,
                                 "name": "Identifier",
                                 "src": "1929:7:1"
                               },
@@ -4689,11 +4689,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 227,
+                                  "referencedDeclaration": 221,
                                   "type": "bytes32",
                                   "value": "BLACKLIST_MANAGER_ROLE"
                                 },
-                                "id": 293,
+                                "id": 287,
                                 "name": "Identifier",
                                 "src": "1937:22:1"
                               },
@@ -4723,21 +4723,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 444,
+                                      "referencedDeclaration": 438,
                                       "type": "function () view returns (address payable)",
                                       "value": "_msgSender"
                                     },
-                                    "id": 294,
+                                    "id": 288,
                                     "name": "Identifier",
                                     "src": "1961:10:1"
                                   }
                                 ],
-                                "id": 295,
+                                "id": 289,
                                 "name": "FunctionCall",
                                 "src": "1961:12:1"
                               }
                             ],
-                            "id": 296,
+                            "id": 290,
                             "name": "FunctionCall",
                             "src": "1929:45:1"
                           },
@@ -4752,17 +4752,17 @@
                               "type": "literal_string \"AddressBlockable: must have blacklist manager role to remove\"",
                               "value": "AddressBlockable: must have blacklist manager role to remove"
                             },
-                            "id": 297,
+                            "id": 291,
                             "name": "Literal",
                             "src": "1976:62:1"
                           }
                         ],
-                        "id": 298,
+                        "id": 292,
                         "name": "FunctionCall",
                         "src": "1921:118:1"
                       }
                     ],
-                    "id": 299,
+                    "id": 293,
                     "name": "ExpressionStatement",
                     "src": "1921:118:1"
                   },
@@ -4797,7 +4797,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "remove",
-                              "referencedDeclaration": 2358,
+                              "referencedDeclaration": 2352,
                               "type": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer,address) returns (bool)"
                             },
                             "children": [
@@ -4806,16 +4806,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 222,
+                                  "referencedDeclaration": 216,
                                   "type": "struct EnumerableSetUpgradeable.AddressSet storage ref",
                                   "value": "_blacklistedAddresses"
                                 },
-                                "id": 300,
+                                "id": 294,
                                 "name": "Identifier",
                                 "src": "2054:21:1"
                               }
                             ],
-                            "id": 301,
+                            "id": 295,
                             "name": "MemberAccess",
                             "src": "2054:28:1"
                           },
@@ -4824,16 +4824,16 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 288,
+                              "referencedDeclaration": 282,
                               "type": "address",
                               "value": "account"
                             },
-                            "id": 302,
+                            "id": 296,
                             "name": "Identifier",
                             "src": "2083:7:1"
                           }
                         ],
-                        "id": 303,
+                        "id": 297,
                         "name": "FunctionCall",
                         "src": "2054:37:1"
                       },
@@ -4871,11 +4871,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 239,
+                                      "referencedDeclaration": 233,
                                       "type": "function (address,address)",
                                       "value": "BlacklistRemoved"
                                     },
-                                    "id": 304,
+                                    "id": 298,
                                     "name": "Identifier",
                                     "src": "2112:16:1"
                                   },
@@ -4884,11 +4884,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 288,
+                                      "referencedDeclaration": 282,
                                       "type": "address",
                                       "value": "account"
                                     },
-                                    "id": 305,
+                                    "id": 299,
                                     "name": "Identifier",
                                     "src": "2129:7:1"
                                   },
@@ -4918,46 +4918,46 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 444,
+                                          "referencedDeclaration": 438,
                                           "type": "function () view returns (address payable)",
                                           "value": "_msgSender"
                                         },
-                                        "id": 306,
+                                        "id": 300,
                                         "name": "Identifier",
                                         "src": "2138:10:1"
                                       }
                                     ],
-                                    "id": 307,
+                                    "id": 301,
                                     "name": "FunctionCall",
                                     "src": "2138:12:1"
                                   }
                                 ],
-                                "id": 308,
+                                "id": 302,
                                 "name": "FunctionCall",
                                 "src": "2112:39:1"
                               }
                             ],
-                            "id": 309,
+                            "id": 303,
                             "name": "EmitStatement",
                             "src": "2107:44:1"
                           }
                         ],
-                        "id": 310,
+                        "id": 304,
                         "name": "Block",
                         "src": "2093:69:1"
                       }
                     ],
-                    "id": 311,
+                    "id": 305,
                     "name": "IfStatement",
                     "src": "2050:112:1"
                   }
                 ],
-                "id": 312,
+                "id": 306,
                 "name": "Block",
                 "src": "1911:257:1"
               }
             ],
-            "id": 313,
+            "id": 307,
             "name": "FunctionDefinition",
             "src": "1858:310:1"
           },
@@ -4971,7 +4971,7 @@
                 null
               ],
               "name": "isBlacklisted",
-              "scope": 415,
+              "scope": 409,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "public"
@@ -4984,7 +4984,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "account",
-                      "scope": 326,
+                      "scope": 320,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -4997,17 +4997,17 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 314,
+                        "id": 308,
                         "name": "ElementaryTypeName",
                         "src": "2213:7:1"
                       }
                     ],
-                    "id": 315,
+                    "id": 309,
                     "name": "VariableDeclaration",
                     "src": "2213:15:1"
                   }
                 ],
-                "id": 316,
+                "id": 310,
                 "name": "ParameterList",
                 "src": "2212:17:1"
               },
@@ -5018,7 +5018,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "",
-                      "scope": 326,
+                      "scope": 320,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -5030,17 +5030,17 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 317,
+                        "id": 311,
                         "name": "ElementaryTypeName",
                         "src": "2251:4:1"
                       }
                     ],
-                    "id": 318,
+                    "id": 312,
                     "name": "VariableDeclaration",
                     "src": "2251:4:1"
                   }
                 ],
-                "id": 319,
+                "id": 313,
                 "name": "ParameterList",
                 "src": "2250:6:1"
               },
@@ -5048,7 +5048,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 319
+                      "functionReturnParameters": 313
                     },
                     "children": [
                       {
@@ -5079,7 +5079,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "contains",
-                              "referencedDeclaration": 2381,
+                              "referencedDeclaration": 2375,
                               "type": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer,address) view returns (bool)"
                             },
                             "children": [
@@ -5088,16 +5088,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 222,
+                                  "referencedDeclaration": 216,
                                   "type": "struct EnumerableSetUpgradeable.AddressSet storage ref",
                                   "value": "_blacklistedAddresses"
                                 },
-                                "id": 320,
+                                "id": 314,
                                 "name": "Identifier",
                                 "src": "2274:21:1"
                               }
                             ],
-                            "id": 321,
+                            "id": 315,
                             "name": "MemberAccess",
                             "src": "2274:30:1"
                           },
@@ -5106,31 +5106,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 315,
+                              "referencedDeclaration": 309,
                               "type": "address",
                               "value": "account"
                             },
-                            "id": 322,
+                            "id": 316,
                             "name": "Identifier",
                             "src": "2305:7:1"
                           }
                         ],
-                        "id": 323,
+                        "id": 317,
                         "name": "FunctionCall",
                         "src": "2274:39:1"
                       }
                     ],
-                    "id": 324,
+                    "id": 318,
                     "name": "Return",
                     "src": "2267:46:1"
                   }
                 ],
-                "id": 325,
+                "id": 319,
                 "name": "Block",
                 "src": "2257:63:1"
               }
             ],
-            "id": 326,
+            "id": 320,
             "name": "FunctionDefinition",
             "src": "2190:130:1"
           },
@@ -5144,7 +5144,7 @@
                 null
               ],
               "name": "getBlacklistedAddressesCount",
-              "scope": 415,
+              "scope": 409,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "public"
@@ -5154,7 +5154,7 @@
                 "attributes": {
                   "text": " @dev Returns the number of accounts those are in blacklist"
                 },
-                "id": 327,
+                "id": 321,
                 "name": "StructuredDocumentation",
                 "src": "2326:77:1"
               },
@@ -5165,7 +5165,7 @@
                   ]
                 },
                 "children": [],
-                "id": 328,
+                "id": 322,
                 "name": "ParameterList",
                 "src": "2445:2:1"
               },
@@ -5176,7 +5176,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "",
-                      "scope": 346,
+                      "scope": 340,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -5188,17 +5188,17 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 329,
+                        "id": 323,
                         "name": "ElementaryTypeName",
                         "src": "2469:7:1"
                       }
                     ],
-                    "id": 330,
+                    "id": 324,
                     "name": "VariableDeclaration",
                     "src": "2469:7:1"
                   }
                 ],
-                "id": 331,
+                "id": 325,
                 "name": "ParameterList",
                 "src": "2468:9:1"
               },
@@ -5241,7 +5241,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 332,
+                            "id": 326,
                             "name": "Identifier",
                             "src": "2488:7:1"
                           },
@@ -5275,11 +5275,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 553,
+                                  "referencedDeclaration": 547,
                                   "type": "function (bytes32,address) view returns (bool)",
                                   "value": "hasRole"
                                 },
-                                "id": 333,
+                                "id": 327,
                                 "name": "Identifier",
                                 "src": "2496:7:1"
                               },
@@ -5288,11 +5288,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 227,
+                                  "referencedDeclaration": 221,
                                   "type": "bytes32",
                                   "value": "BLACKLIST_MANAGER_ROLE"
                                 },
-                                "id": 334,
+                                "id": 328,
                                 "name": "Identifier",
                                 "src": "2504:22:1"
                               },
@@ -5322,21 +5322,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 444,
+                                      "referencedDeclaration": 438,
                                       "type": "function () view returns (address payable)",
                                       "value": "_msgSender"
                                     },
-                                    "id": 335,
+                                    "id": 329,
                                     "name": "Identifier",
                                     "src": "2528:10:1"
                                   }
                                 ],
-                                "id": 336,
+                                "id": 330,
                                 "name": "FunctionCall",
                                 "src": "2528:12:1"
                               }
                             ],
-                            "id": 337,
+                            "id": 331,
                             "name": "FunctionCall",
                             "src": "2496:45:1"
                           },
@@ -5351,23 +5351,23 @@
                               "type": "literal_string \"AddressBlockable: must have blacklist manager role to view\"",
                               "value": "AddressBlockable: must have blacklist manager role to view"
                             },
-                            "id": 338,
+                            "id": 332,
                             "name": "Literal",
                             "src": "2543:60:1"
                           }
                         ],
-                        "id": 339,
+                        "id": 333,
                         "name": "FunctionCall",
                         "src": "2488:116:1"
                       }
                     ],
-                    "id": 340,
+                    "id": 334,
                     "name": "ExpressionStatement",
                     "src": "2488:116:1"
                   },
                   {
                     "attributes": {
-                      "functionReturnParameters": 331
+                      "functionReturnParameters": 325
                     },
                     "children": [
                       {
@@ -5398,7 +5398,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "length",
-                              "referencedDeclaration": 2395,
+                              "referencedDeclaration": 2389,
                               "type": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer) view returns (uint256)"
                             },
                             "children": [
@@ -5407,36 +5407,36 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 222,
+                                  "referencedDeclaration": 216,
                                   "type": "struct EnumerableSetUpgradeable.AddressSet storage ref",
                                   "value": "_blacklistedAddresses"
                                 },
-                                "id": 341,
+                                "id": 335,
                                 "name": "Identifier",
                                 "src": "2622:21:1"
                               }
                             ],
-                            "id": 342,
+                            "id": 336,
                             "name": "MemberAccess",
                             "src": "2622:28:1"
                           }
                         ],
-                        "id": 343,
+                        "id": 337,
                         "name": "FunctionCall",
                         "src": "2622:30:1"
                       }
                     ],
-                    "id": 344,
+                    "id": 338,
                     "name": "Return",
                     "src": "2615:37:1"
                   }
                 ],
-                "id": 345,
+                "id": 339,
                 "name": "Block",
                 "src": "2478:181:1"
               }
             ],
-            "id": 346,
+            "id": 340,
             "name": "FunctionDefinition",
             "src": "2408:251:1"
           },
@@ -5450,7 +5450,7 @@
                 null
               ],
               "name": "getBlacklistedAddressAt",
-              "scope": 415,
+              "scope": 409,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "public"
@@ -5460,7 +5460,7 @@
                 "attributes": {
                   "text": " @dev Returns the number of accounts those are in blacklist"
                 },
-                "id": 347,
+                "id": 341,
                 "name": "StructuredDocumentation",
                 "src": "2665:77:1"
               },
@@ -5471,7 +5471,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "index",
-                      "scope": 377,
+                      "scope": 371,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -5483,17 +5483,17 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 348,
+                        "id": 342,
                         "name": "ElementaryTypeName",
                         "src": "2780:7:1"
                       }
                     ],
-                    "id": 349,
+                    "id": 343,
                     "name": "VariableDeclaration",
                     "src": "2780:13:1"
                   }
                 ],
-                "id": 350,
+                "id": 344,
                 "name": "ParameterList",
                 "src": "2779:15:1"
               },
@@ -5504,7 +5504,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "",
-                      "scope": 377,
+                      "scope": 371,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -5517,17 +5517,17 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 351,
+                        "id": 345,
                         "name": "ElementaryTypeName",
                         "src": "2816:7:1"
                       }
                     ],
-                    "id": 352,
+                    "id": 346,
                     "name": "VariableDeclaration",
                     "src": "2816:7:1"
                   }
                 ],
-                "id": 353,
+                "id": 347,
                 "name": "ParameterList",
                 "src": "2815:9:1"
               },
@@ -5570,7 +5570,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 354,
+                            "id": 348,
                             "name": "Identifier",
                             "src": "2835:7:1"
                           },
@@ -5604,11 +5604,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 553,
+                                  "referencedDeclaration": 547,
                                   "type": "function (bytes32,address) view returns (bool)",
                                   "value": "hasRole"
                                 },
-                                "id": 355,
+                                "id": 349,
                                 "name": "Identifier",
                                 "src": "2843:7:1"
                               },
@@ -5617,11 +5617,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 227,
+                                  "referencedDeclaration": 221,
                                   "type": "bytes32",
                                   "value": "BLACKLIST_MANAGER_ROLE"
                                 },
-                                "id": 356,
+                                "id": 350,
                                 "name": "Identifier",
                                 "src": "2851:22:1"
                               },
@@ -5651,21 +5651,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 444,
+                                      "referencedDeclaration": 438,
                                       "type": "function () view returns (address payable)",
                                       "value": "_msgSender"
                                     },
-                                    "id": 357,
+                                    "id": 351,
                                     "name": "Identifier",
                                     "src": "2875:10:1"
                                   }
                                 ],
-                                "id": 358,
+                                "id": 352,
                                 "name": "FunctionCall",
                                 "src": "2875:12:1"
                               }
                             ],
-                            "id": 359,
+                            "id": 353,
                             "name": "FunctionCall",
                             "src": "2843:45:1"
                           },
@@ -5680,17 +5680,17 @@
                               "type": "literal_string \"AddressBlockable: must have blacklist manager role to view\"",
                               "value": "AddressBlockable: must have blacklist manager role to view"
                             },
-                            "id": 360,
+                            "id": 354,
                             "name": "Literal",
                             "src": "2890:60:1"
                           }
                         ],
-                        "id": 361,
+                        "id": 355,
                         "name": "FunctionCall",
                         "src": "2835:116:1"
                       }
                     ],
-                    "id": 362,
+                    "id": 356,
                     "name": "ExpressionStatement",
                     "src": "2835:116:1"
                   },
@@ -5731,7 +5731,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 363,
+                            "id": 357,
                             "name": "Identifier",
                             "src": "2961:7:1"
                           },
@@ -5754,11 +5754,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 349,
+                                  "referencedDeclaration": 343,
                                   "type": "uint256",
                                   "value": "index"
                                 },
-                                "id": 364,
+                                "id": 358,
                                 "name": "Identifier",
                                 "src": "2969:5:1"
                               },
@@ -5788,21 +5788,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 346,
+                                      "referencedDeclaration": 340,
                                       "type": "function () view returns (uint256)",
                                       "value": "getBlacklistedAddressesCount"
                                     },
-                                    "id": 365,
+                                    "id": 359,
                                     "name": "Identifier",
                                     "src": "2977:28:1"
                                   }
                                 ],
-                                "id": 366,
+                                "id": 360,
                                 "name": "FunctionCall",
                                 "src": "2977:30:1"
                               }
                             ],
-                            "id": 367,
+                            "id": 361,
                             "name": "BinaryOperation",
                             "src": "2969:38:1"
                           },
@@ -5817,23 +5817,23 @@
                               "type": "literal_string \"AddressBlockable: index exceeds length\"",
                               "value": "AddressBlockable: index exceeds length"
                             },
-                            "id": 368,
+                            "id": 362,
                             "name": "Literal",
                             "src": "3009:40:1"
                           }
                         ],
-                        "id": 369,
+                        "id": 363,
                         "name": "FunctionCall",
                         "src": "2961:89:1"
                       }
                     ],
-                    "id": 370,
+                    "id": 364,
                     "name": "ExpressionStatement",
                     "src": "2961:89:1"
                   },
                   {
                     "attributes": {
-                      "functionReturnParameters": 353
+                      "functionReturnParameters": 347
                     },
                     "children": [
                       {
@@ -5864,7 +5864,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "at",
-                              "referencedDeclaration": 2418,
+                              "referencedDeclaration": 2412,
                               "type": "function (struct EnumerableSetUpgradeable.AddressSet storage pointer,uint256) view returns (address)"
                             },
                             "children": [
@@ -5873,16 +5873,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 222,
+                                  "referencedDeclaration": 216,
                                   "type": "struct EnumerableSetUpgradeable.AddressSet storage ref",
                                   "value": "_blacklistedAddresses"
                                 },
-                                "id": 371,
+                                "id": 365,
                                 "name": "Identifier",
                                 "src": "3067:21:1"
                               }
                             ],
-                            "id": 372,
+                            "id": 366,
                             "name": "MemberAccess",
                             "src": "3067:24:1"
                           },
@@ -5891,38 +5891,38 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 349,
+                              "referencedDeclaration": 343,
                               "type": "uint256",
                               "value": "index"
                             },
-                            "id": 373,
+                            "id": 367,
                             "name": "Identifier",
                             "src": "3092:5:1"
                           }
                         ],
-                        "id": 374,
+                        "id": 368,
                         "name": "FunctionCall",
                         "src": "3067:31:1"
                       }
                     ],
-                    "id": 375,
+                    "id": 369,
                     "name": "Return",
                     "src": "3060:38:1"
                   }
                 ],
-                "id": 376,
+                "id": 370,
                 "name": "Block",
                 "src": "2825:280:1"
               }
             ],
-            "id": 377,
+            "id": 371,
             "name": "FunctionDefinition",
             "src": "2747:358:1"
           },
           {
             "attributes": {
               "baseFunctions": [
-                1709
+                1703
               ],
               "implemented": true,
               "isConstructor": false,
@@ -5931,7 +5931,7 @@
                 null
               ],
               "name": "_beforeTokenTransfer",
-              "scope": 415,
+              "scope": 409,
               "stateMutability": "nonpayable",
               "virtual": true,
               "visibility": "internal"
@@ -5941,7 +5941,7 @@
                 "attributes": {
                   "text": " @dev See {ERC20-_beforeTokenTransfer}."
                 },
-                "id": 378,
+                "id": 372,
                 "name": "StructuredDocumentation",
                 "src": "3111:57:1"
               },
@@ -5951,7 +5951,7 @@
                     null
                   ]
                 },
-                "id": 386,
+                "id": 380,
                 "name": "OverrideSpecifier",
                 "src": "3262:8:1"
               },
@@ -5962,7 +5962,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "from",
-                      "scope": 410,
+                      "scope": 404,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -5975,12 +5975,12 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 379,
+                        "id": 373,
                         "name": "ElementaryTypeName",
                         "src": "3203:7:1"
                       }
                     ],
-                    "id": 380,
+                    "id": 374,
                     "name": "VariableDeclaration",
                     "src": "3203:12:1"
                   },
@@ -5989,7 +5989,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "to",
-                      "scope": 410,
+                      "scope": 404,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -6002,12 +6002,12 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 381,
+                        "id": 375,
                         "name": "ElementaryTypeName",
                         "src": "3217:7:1"
                       }
                     ],
-                    "id": 382,
+                    "id": 376,
                     "name": "VariableDeclaration",
                     "src": "3217:10:1"
                   },
@@ -6016,7 +6016,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "amount",
-                      "scope": 410,
+                      "scope": 404,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -6028,17 +6028,17 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 383,
+                        "id": 377,
                         "name": "ElementaryTypeName",
                         "src": "3229:7:1"
                       }
                     ],
-                    "id": 384,
+                    "id": 378,
                     "name": "VariableDeclaration",
                     "src": "3229:14:1"
                   }
                 ],
-                "id": 385,
+                "id": 379,
                 "name": "ParameterList",
                 "src": "3202:42:1"
               },
@@ -6049,7 +6049,7 @@
                   ]
                 },
                 "children": [],
-                "id": 387,
+                "id": 381,
                 "name": "ParameterList",
                 "src": "3271:0:1"
               },
@@ -6093,7 +6093,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "_beforeTokenTransfer",
-                              "referencedDeclaration": 1709,
+                              "referencedDeclaration": 1703,
                               "type": "function (address,address,uint256)"
                             },
                             "children": [
@@ -6106,12 +6106,12 @@
                                   "type": "contract super AddressBlockableUpgradeable",
                                   "value": "super"
                                 },
-                                "id": 388,
+                                "id": 382,
                                 "name": "Identifier",
                                 "src": "3281:5:1"
                               }
                             ],
-                            "id": 390,
+                            "id": 384,
                             "name": "MemberAccess",
                             "src": "3281:26:1"
                           },
@@ -6120,11 +6120,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 380,
+                              "referencedDeclaration": 374,
                               "type": "address",
                               "value": "from"
                             },
-                            "id": 391,
+                            "id": 385,
                             "name": "Identifier",
                             "src": "3308:4:1"
                           },
@@ -6133,11 +6133,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 382,
+                              "referencedDeclaration": 376,
                               "type": "address",
                               "value": "to"
                             },
-                            "id": 392,
+                            "id": 386,
                             "name": "Identifier",
                             "src": "3314:2:1"
                           },
@@ -6146,21 +6146,21 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 384,
+                              "referencedDeclaration": 378,
                               "type": "uint256",
                               "value": "amount"
                             },
-                            "id": 393,
+                            "id": 387,
                             "name": "Identifier",
                             "src": "3318:6:1"
                           }
                         ],
-                        "id": 394,
+                        "id": 388,
                         "name": "FunctionCall",
                         "src": "3281:44:1"
                       }
                     ],
-                    "id": 395,
+                    "id": 389,
                     "name": "ExpressionStatement",
                     "src": "3281:44:1"
                   },
@@ -6201,7 +6201,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 396,
+                            "id": 390,
                             "name": "Identifier",
                             "src": "3335:7:1"
                           },
@@ -6256,11 +6256,11 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 326,
+                                          "referencedDeclaration": 320,
                                           "type": "function (address) view returns (bool)",
                                           "value": "isBlacklisted"
                                         },
-                                        "id": 397,
+                                        "id": 391,
                                         "name": "Identifier",
                                         "src": "3344:13:1"
                                       },
@@ -6269,21 +6269,21 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 380,
+                                          "referencedDeclaration": 374,
                                           "type": "address",
                                           "value": "from"
                                         },
-                                        "id": 398,
+                                        "id": 392,
                                         "name": "Identifier",
                                         "src": "3358:4:1"
                                       }
                                     ],
-                                    "id": 399,
+                                    "id": 393,
                                     "name": "FunctionCall",
                                     "src": "3344:19:1"
                                   }
                                 ],
-                                "id": 400,
+                                "id": 394,
                                 "name": "UnaryOperation",
                                 "src": "3343:20:1"
                               },
@@ -6324,11 +6324,11 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 326,
+                                          "referencedDeclaration": 320,
                                           "type": "function (address) view returns (bool)",
                                           "value": "isBlacklisted"
                                         },
-                                        "id": 401,
+                                        "id": 395,
                                         "name": "Identifier",
                                         "src": "3368:13:1"
                                       },
@@ -6337,26 +6337,26 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 382,
+                                          "referencedDeclaration": 376,
                                           "type": "address",
                                           "value": "to"
                                         },
-                                        "id": 402,
+                                        "id": 396,
                                         "name": "Identifier",
                                         "src": "3382:2:1"
                                       }
                                     ],
-                                    "id": 403,
+                                    "id": 397,
                                     "name": "FunctionCall",
                                     "src": "3368:17:1"
                                   }
                                 ],
-                                "id": 404,
+                                "id": 398,
                                 "name": "UnaryOperation",
                                 "src": "3367:18:1"
                               }
                             ],
-                            "id": 405,
+                            "id": 399,
                             "name": "BinaryOperation",
                             "src": "3343:42:1"
                           },
@@ -6371,27 +6371,27 @@
                               "type": "literal_string \"AddressBlockable: invalid sender or recipient\"",
                               "value": "AddressBlockable: invalid sender or recipient"
                             },
-                            "id": 406,
+                            "id": 400,
                             "name": "Literal",
                             "src": "3387:47:1"
                           }
                         ],
-                        "id": 407,
+                        "id": 401,
                         "name": "FunctionCall",
                         "src": "3335:100:1"
                       }
                     ],
-                    "id": 408,
+                    "id": 402,
                     "name": "ExpressionStatement",
                     "src": "3335:100:1"
                   }
                 ],
-                "id": 409,
+                "id": 403,
                 "name": "Block",
                 "src": "3271:171:1"
               }
             ],
-            "id": 410,
+            "id": 404,
             "name": "FunctionDefinition",
             "src": "3173:269:1"
           },
@@ -6400,7 +6400,7 @@
               "constant": false,
               "mutability": "mutable",
               "name": "__gap",
-              "scope": 415,
+              "scope": 409,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256[50]",
@@ -6417,7 +6417,7 @@
                       "name": "uint256",
                       "type": "uint256"
                     },
-                    "id": 411,
+                    "id": 405,
                     "name": "ElementaryTypeName",
                     "src": "3447:7:1"
                   },
@@ -6432,27 +6432,27 @@
                       "type": "int_const 50",
                       "value": "50"
                     },
-                    "id": 412,
+                    "id": 406,
                     "name": "Literal",
                     "src": "3455:2:1"
                   }
                 ],
-                "id": 413,
+                "id": 407,
                 "name": "ArrayTypeName",
                 "src": "3447:11:1"
               }
             ],
-            "id": 414,
+            "id": 408,
             "name": "VariableDeclaration",
             "src": "3447:25:1"
           }
         ],
-        "id": 415,
+        "id": 409,
         "name": "ContractDefinition",
         "src": "457:3018:1"
       }
     ],
-    "id": 416,
+    "id": 410,
     "name": "SourceUnit",
     "src": "33:3443:1"
   },
@@ -6462,7 +6462,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-12T07:32:46.267Z",
+  "updatedAt": "2021-01-12T07:33:40.103Z",
   "devdoc": {
     "details": "Contract module that allows blocking addresses from transferring",
     "kind": "dev",

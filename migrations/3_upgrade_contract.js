@@ -13,3 +13,8 @@
 //   });
 //   console.log('> New contract deployed at ' + instance.address);
 // };
+
+
+module.exports = async function () {
+
+}
