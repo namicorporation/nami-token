@@ -29,10 +29,10 @@ contract NamiCorporationTokenUpgradeable is Initializable, ContextUpgradeable, A
         __Pausable_init_unchained();
         __ERC20Pausable_init_unchained();
         __AddressBlockable_init_unchained();
-        __NamiCorporationTokenUpgradeable_init_unchained(name, symbol);
+        __NamiCorporationTokenUpgradeable_init_unchained();
     }
 
-    function __NamiCorporationTokenUpgradeable_init_unchained(string memory name, string memory symbol) internal initializer {
+    function __NamiCorporationTokenUpgradeable_init_unchained(/*string memory name, string memory symbol*/) internal initializer {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
         _setupRole(BLACKLIST_MANAGER_ROLE, _msgSender());
         _setupRole(MINTER_ROLE, _msgSender());
