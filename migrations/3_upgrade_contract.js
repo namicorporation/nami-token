@@ -15,6 +15,6 @@
 // };
 
 
-module.exports = async function () {
-
+module.exports = async function (deployer) {
+    console.log('> Placeholder for upgrade contract')
 }
