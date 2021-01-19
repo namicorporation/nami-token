@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "verify_rinkeby": "npx truffle run verify NamiCorporationTokenUpgradable --network rinkeby",
     "migrate_rinkeby": "npx truffle migrate --network rinkeby",
-    "deploy_rinkeby": "npm run migrate_rinkeby"
+    "deploy_rinkeby": "npm run migrate_rinkeby",
+    "start_chain": "npx ganache-cli --deterministic --db ganache_data"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "chai-bn": "^0.2.1",
     "dotenv": "^8.2.0",
     "ganache-cli": "^6.12.2",
+    "lodash": "^4.17.20",
     "truffle": "^5.1.60",
     "truffle-plugin-verify": "^0.5.4"
   },

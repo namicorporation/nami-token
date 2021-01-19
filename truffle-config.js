@@ -67,8 +67,10 @@ module.exports = {
       skipDryRun: false     // Skip dry run before migrations? (default: false for public nets )
     },
     development: {
-      provider: () => new HDWalletProvider(process.env.MNEMONIC_PHRASE_DEV, process.env.JSON_RPC_DEV),
-      network_id: '*',       // Ropsten's id
+      host: process.env.JSON_RPC_DEV,
+      port: process.env.JSON_RPC_DEV_PORT,
+      // provider: () => new HDWalletProvider(process.env.MNEMONIC_PHRASE_DEV, process.env.JSON_RPC_DEV),
+      network_id: process.env.NETWORK_ID_DEV || '*',
     },
     ropsten: {
       provider: () => new HDWalletProvider(process.env.MNEMONIC_PHRASE_TEST, process.env.ROPSTEN_JSON_RPC),
