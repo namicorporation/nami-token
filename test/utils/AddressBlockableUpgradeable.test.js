@@ -8,7 +8,7 @@ chai.use(require('chai-bn')(BN));
 const NamiCorporationTokenUpgradeable = artifacts.require('NamiCorporationTokenUpgradeable');
 
 // Start test block
-contract ('NamiCorporationTokenUpgradeable', function ([ owner, other, other2 ]) {
+contract ('AddressBlockableUpgradeable', function ([ owner, other, other2 ]) {
     beforeEach(async function () {
         // Deploy a new contract for each test
         this.instance = await NamiCorporationTokenUpgradeable.new({ from: owner });

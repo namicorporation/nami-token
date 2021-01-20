@@ -18,6 +18,7 @@ contract Migrations {
   }
 
   function changeOwner(address newOwner) public restricted {
+    require(newOwner != address(0), "Migration: new owner is the zero address");
     owner = newOwner;
   }
 }
