@@ -85,6 +85,20 @@ abstract contract AddressBlockableUpgradeable is Initializable, ERC20Upgradeable
     }
 
     /**
+     * @dev Returns all addresses in blacklist
+     */
+    function getBlacklistedAddresses() public view returns (address[] memory) {
+        require(hasRole(BLACKLIST_MANAGER_ROLE, _msgSender()), "AddressBlockable: must have blacklist manager role to view");
+
+        uint256 addressesCount = getBlacklistedAddressesCount();
+        address[] memory blacklistedAddresses = new address[](addressesCount);
+        for (uint256 i = 0; i < addressesCount; i++) {
+            blacklistedAddresses[i] = getBlacklistedAddressAt(i);
+        }
+        return blacklistedAddresses;
+    }
+
+    /**
      * @dev See {ERC20-_beforeTokenTransfer}.
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override {

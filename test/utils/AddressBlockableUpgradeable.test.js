@@ -36,6 +36,24 @@ contract ('NamiCorporationTokenUpgradeable', function ([ owner, other, other2 ])
                 'AddressBlockable: must have blacklist manager role to add',
             );
         });
+        it('view blacklist from non-role address', async function () {
+            await this.instance.addToBlacklist(ADDRESS, { from: owner });
+            await expectRevert(
+                this.instance.getBlacklistedAddressAt(0, {from: other}),
+                'AddressBlockable: must have blacklist manager role to view',
+            );
+        });
+        it('check get all blacklisted addresses', async function() {
+            await this.instance.addToBlacklist(ADDRESS, { from: owner });
+            await this.instance.addToBlacklist(other, { from: owner });
+            await this.instance.addToBlacklist(other2, { from: owner });
+            const blacklistedAddresses = await this.instance.getBlacklistedAddresses();
+            expect(blacklistedAddresses).to.eql([
+                ADDRESS,
+                other,
+                other2,
+            ]);
+        })
     });
     describe('Check remove from blacklist', function() {
         it('remove from blacklist', async function () {
