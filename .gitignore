@@ -119,3 +119,4 @@ dist
 
 # ganache
 /ganache_data/
+.DS_Store
