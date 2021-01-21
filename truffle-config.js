@@ -59,7 +59,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     mainnet: {
-      provider: () => new HDWalletProvider(process.env.MNEMONIC_PHRASE_TEST, process.env.MAINNET_JSON_RPC),
+      provider: () => new HDWalletProvider(process.env.MNEMONIC_PHRASE_MAINNET, process.env.MAINNET_JSON_RPC),
       network_id: 1,       // Ropsten's id
       gas: 5e6,        // Ropsten has a lower block limit than mainnet
       // gasPrice: 200e9,
