@@ -62,7 +62,7 @@ module.exports = {
       provider: () => new HDWalletProvider(process.env.MNEMONIC_PHRASE_MAINNET, process.env.MAINNET_JSON_RPC),
       network_id: 1,       // Ropsten's id
       gas: 5e6,        // Ropsten has a lower block limit than mainnet
-      gasPrice: 120e9,
+      gasPrice: 95e9, // e9 is gwei
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: false     // Skip dry run before migrations? (default: false for public nets )
