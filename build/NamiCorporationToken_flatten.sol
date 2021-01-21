@@ -1,6 +1,4 @@
-// File: @openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -298,9 +296,7 @@ library EnumerableSetUpgradeable {
     }
 }
 
-// File: @openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.2 <0.8.0;
 
@@ -466,9 +462,7 @@ library AddressUpgradeable {
     }
 }
 
-// File: @openzeppelin/contracts-upgradeable/proxy/Initializable.sol
 
-// SPDX-License-Identifier: MIT
 
 // solhint-disable-next-line compiler-version
 pragma solidity >=0.4.24 <0.8.0;
@@ -479,10 +473,10 @@ pragma solidity >=0.4.24 <0.8.0;
  * behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an
  * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer
  * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.
- * 
+ *
  * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as
  * possible by providing the encoded function call as the `_data` argument to {UpgradeableProxy-constructor}.
- * 
+ *
  * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure
  * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.
  */
@@ -532,9 +526,7 @@ abstract contract Initializable {
     }
 }
 
-// File: @openzeppelin/contracts-upgradeable/GSN/ContextUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -567,9 +559,7 @@ abstract contract ContextUpgradeable is Initializable {
     uint256[50] private __gap;
 }
 
-// File: @openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -795,9 +785,7 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable 
     uint256[49] private __gap;
 }
 
-// File: @openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -875,9 +863,7 @@ interface IERC20Upgradeable {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// File: @openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -1037,9 +1023,7 @@ library SafeMathUpgradeable {
     }
 }
 
-// File: @openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -1352,9 +1336,7 @@ contract ERC20Upgradeable is Initializable, ContextUpgradeable, IERC20Upgradeabl
     uint256[44] private __gap;
 }
 
-// File: @openzeppelin/contracts-upgradeable/token/ERC20/ERC20BurnableUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -1405,9 +1387,7 @@ abstract contract ERC20BurnableUpgradeable is Initializable, ContextUpgradeable,
     uint256[50] private __gap;
 }
 
-// File: @openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -1504,9 +1484,7 @@ abstract contract PausableUpgradeable is Initializable, ContextUpgradeable {
     uint256[49] private __gap;
 }
 
-// File: @openzeppelin/contracts-upgradeable/token/ERC20/ERC20PausableUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -1544,9 +1522,7 @@ abstract contract ERC20PausableUpgradeable is Initializable, ERC20Upgradeable, P
     uint256[50] private __gap;
 }
 
-// File: contracts/utils/AddressBlockableUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.7.0;
 
@@ -1632,6 +1608,20 @@ abstract contract AddressBlockableUpgradeable is Initializable, ERC20Upgradeable
     }
 
     /**
+     * @dev Returns all addresses in blacklist
+     */
+    function getBlacklistedAddresses() public view returns (address[] memory) {
+        require(hasRole(BLACKLIST_MANAGER_ROLE, _msgSender()), "AddressBlockable: must have blacklist manager role to view");
+
+        uint256 addressesCount = getBlacklistedAddressesCount();
+        address[] memory blacklistedAddresses = new address[](addressesCount);
+        for (uint256 i = 0; i < addressesCount; i++) {
+            blacklistedAddresses[i] = getBlacklistedAddressAt(i);
+        }
+        return blacklistedAddresses;
+    }
+
+    /**
      * @dev See {ERC20-_beforeTokenTransfer}.
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override {
@@ -1641,9 +1631,7 @@ abstract contract AddressBlockableUpgradeable is Initializable, ERC20Upgradeable
     uint256[50] private __gap;
 }
 
-// File: contracts/NamiCorporationTokenUpgradeable.sol
 
-// SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
 
