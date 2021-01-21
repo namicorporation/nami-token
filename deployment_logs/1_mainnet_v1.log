@@ -1,0 +1,248 @@
+❯ npx truffle migrate --network mainnet -f 1 --to 1
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'mainnet-fork'
+> Network id:      1
+> Block gas limit: 12475468 (0xbe5c4c)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        11695596
+   > block timestamp:     1611188952
+   > account:             0x52d8bD77f3ecbadB5aA134716Edecb3bAcb1467e
+   > balance:             0.9588314
+   > gas used:            275855 (0x4358f)
+   > gas price:           120 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0331026 ETH
+
+   -------------------------------------
+   > Total cost:           0.0331026 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.0331026 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'mainnet'
+> Network id:      1
+> Block gas limit: 12487650 (0xbe8be2)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xc97f893871db5df6751980ed059941a1c63c048fbc27a1cad85ba0e572e80fb0
+   > Blocks: 1            Seconds: 12
+   > contract address:    0x04b80cd27Ac740afdADbA9A1c560a76ccd036555
+   > block number:        11695596
+   > block timestamp:     1611188953
+   > account:             0x52d8bD77f3ecbadB5aA134716Edecb3bAcb1467e
+   > balance:             0.9570314
+   > gas used:            290855 (0x47027)
+   > gas price:           120 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0349026 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 11695597)
+   > confirmation number: 2 (block: 11695598)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0349026 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.0349026 ETH
+
+
+
+❯ npx truffle migrate --network mainnet
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'mainnet-fork'
+> Network id:      1
+> Block gas limit: 12432826 (0xbdb5ba)
+
+
+2_deploy_nami_token.js
+======================
+
+Warning: Potentially unsafe deployment of NamiCorporationTokenUpgradeable
+
+    You are using the `unsafeAllowCustomTypes` flag to skip storage checks for structs and enums.
+    Make sure you have manually checked the storage layout for incompatibilities.
+
+
+   Deploying 'NamiCorporationTokenUpgradeable'
+   -------------------------------------------
+   > block number:        11695607
+   > block timestamp:     1611189070
+   > account:             0x52d8bD77f3ecbadB5aA134716Edecb3bAcb1467e
+   > balance:             0.632979885
+   > gas used:            3357565 (0x333b7d)
+   > gas price:           95 gwei
+   > value sent:          0 ETH
+   > total cost:          0.318968675 ETH
+
+
+   Deploying 'ProxyAdmin'
+   ----------------------
+   > block number:        11695608
+   > block timestamp:     1611189075
+   > account:             0x52d8bD77f3ecbadB5aA134716Edecb3bAcb1467e
+   > balance:             0.550808495
+   > gas used:            864962 (0xd32c2)
+   > gas price:           95 gwei
+   > value sent:          0 ETH
+   > total cost:          0.08217139 ETH
+
+
+   Deploying 'AdminUpgradeabilityProxy'
+   ------------------------------------
+   > block number:        11695609
+   > block timestamp:     1611189113
+   > account:             0x52d8bD77f3ecbadB5aA134716Edecb3bAcb1467e
+   > balance:             0.48353681
+   > gas used:            708123 (0xace1b)
+   > gas price:           95 gwei
+   > value sent:          0 ETH
+   > total cost:          0.067271685 ETH
+
+>> NamiCorporationToken deployed to: 0x2f7B618993cc3848d6C7ed9CdD5e835E4Fe22b98
+   -------------------------------------
+   > Total cost:          0.46841175 ETH
+
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.46841175 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'mainnet'
+> Network id:      1
+> Block gas limit: 12500000 (0xbebc20)
+
+
+2_deploy_nami_token.js
+======================
+
+Warning: Potentially unsafe deployment of NamiCorporationTokenUpgradeable
+
+    You are using the `unsafeAllowCustomTypes` flag to skip storage checks for structs and enums.
+    Make sure you have manually checked the storage layout for incompatibilities.
+
+
+   Deploying 'NamiCorporationTokenUpgradeable'
+   -------------------------------------------
+   > transaction hash:    0x76e75cd7a8bc6403bcbaeabc91b20068d10fa9d5d889ff6db799e25ae7c1a484
+   > Blocks: 1            Seconds: 32
+   > contract address:    0xf04d57942420A05Da8cF7C4B1b014176f364b4B9
+   > block number:        11695615
+   > block timestamp:     1611189157
+   > account:             0x52d8bD77f3ecbadB5aA134716Edecb3bAcb1467e
+   > balance:             0.632979885
+   > gas used:            3357565 (0x333b7d)
+   > gas price:           95 gwei
+   > value sent:          0 ETH
+   > total cost:          0.318968675 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 11695616)
+   > confirmation number: 2 (block: 11695617)
+
+   Deploying 'ProxyAdmin'
+   ----------------------
+   > transaction hash:    0x2f133b36b5c6098e584867a7efcf841757a6e9ea698a5a936625058fe55768fc
+   > Blocks: 0            Seconds: 8
+   > contract address:    0xfb8cbed2aDC7a9629835A33c6b2Ec51247eE794d
+   > block number:        11695619
+   > block timestamp:     1611189193
+   > account:             0x52d8bD77f3ecbadB5aA134716Edecb3bAcb1467e
+   > balance:             0.549383495
+   > gas used:            879962 (0xd6d5a)
+   > gas price:           95 gwei
+   > value sent:          0 ETH
+   > total cost:          0.08359639 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 11695620)
+   > confirmation number: 2 (block: 11695621)
+
+   Deploying 'AdminUpgradeabilityProxy'
+   ------------------------------------
+   > transaction hash:    0x230ddfcc9c9296126dd6eeecd939cdcf7daf3656b83fb5798a742e63d6d04a2b
+   > Blocks: 0            Seconds: 16
+   > contract address:    0x2f7B618993cc3848d6C7ed9CdD5e835E4Fe22b98
+   > block number:        11695622
+   > block timestamp:     1611189213
+   > account:             0x52d8bD77f3ecbadB5aA134716Edecb3bAcb1467e
+   > balance:             0.45258581
+   > gas used:            1018923 (0xf8c2b)
+   > gas price:           95 gwei
+   > value sent:          0 ETH
+   > total cost:          0.096797685 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 11695623)
+   > confirmation number: 2 (block: 11695624)
+>> NamiCorporationToken deployed to: 0x2f7B618993cc3848d6C7ed9CdD5e835E4Fe22b98
+
+   ⠼ Saving migration to chain.
+
+Error: insufficient funds for gas * price + value
+    at Migration._deploy (/Users/hieptran/Documents/Projects/nami/namismartcontractv2/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:97:1)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at Migration._load (/Users/hieptran/Documents/Projects/nami/namismartcontractv2/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:55:1)
+    at Migration.run (/Users/hieptran/Documents/Projects/nami/namismartcontractv2/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:171:1)
+    at Object.runMigrations (/Users/hieptran/Documents/Projects/nami/namismartcontractv2/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)
+    at Object.runFrom (/Users/hieptran/Documents/Projects/nami/namismartcontractv2/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)
+    at Object.run (/Users/hieptran/Documents/Projects/nami/namismartcontractv2/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)
+    at runMigrations (/Users/hieptran/Documents/Projects/nami/namismartcontractv2/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:269:1)
+    at /Users/hieptran/Documents/Projects/nami/namismartcontractv2/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:229:1
+Truffle v5.1.60 (core: 5.1.60)
+Node v12.16.1
+ ~/Documents/Projects/nami/namismartcontractv2  feature/upgradeable ⇡6 !1 ?1 ································································· 3m 44s  07:34:30 ─╮
+❯

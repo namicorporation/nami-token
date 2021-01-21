@@ -121,3 +121,4 @@ dist
 /ganache_data/
 .DS_Store
 /.env.mainnet
+!/deployment_logs/*.log
