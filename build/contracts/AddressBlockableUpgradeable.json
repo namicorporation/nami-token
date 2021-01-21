@@ -7872,7 +7872,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-20T23:30:19.821Z",
+  "updatedAt": "2021-01-21T00:21:20.861Z",
   "devdoc": {
     "details": "Contract module that allows blocking addresses from transferring",
     "kind": "dev",
